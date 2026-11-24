@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-teal: #073B3A;
+  --color-pearl: #F3F0E8;
+  --color-lime: #C6FF3D;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  background-color: #073B3A;
+  color: #F3F0E8;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #042322;
+}
+::-webkit-scrollbar-thumb {
+  background: #106260;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C6FF3D;
+}
+
+/* Glowing Neon Elements */
+.neon-border {
+  border: 1px solid rgba(198, 255, 61, 0.3);
+  box-shadow: 0 0 15px -3px rgba(198, 255, 61, 0.2);
+}
+
+.neon-border-hover:hover {
+  border-color: #C6FF3D;
+  box-shadow: 0 0 25px rgba(198, 255, 61, 0.4);
+}
+
+/* AI Grid Background */
+.bg-ai-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(243, 240, 232, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(243, 240, 232, 0.04) 1px, transparent 1px);
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 50% 30%, rgba(11, 77, 76, 0.6) 0%, rgba(7, 59, 58, 0.95) 70%, #073B3A 100%);
+}
+
+.neon-glow-text {
+  text-shadow: 0 0 20px rgba(198, 255, 61, 0.6);
+}
+
+/* Glass Card */
+.glass-teal {
+  background: rgba(7, 59, 58, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(243, 240, 232, 0.12);
+}
+
+.glass-teal-hover:hover {
+  border-color: rgba(198, 255, 61, 0.4);
+  background: rgba(10, 53, 52, 0.85);
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(198, 255, 61, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(198, 255, 61, 0.7);
+  }
+}
+
+.animate-neon-pulse {
+  animation: pulseGlow 2.5s infinite;
+}
