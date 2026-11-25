@@ -8,29 +8,29 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) => {
-  // Target: Registration Deadline November 30, 2026 23:59:59 IST
-  // Opening: November 23, 2026 00:00:00 IST
+  // Target: Registration Deadline December 31, 2026 12:00 AM IST
+  // Opening: November 25, 2026 12:00 AM IST
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
-    label: 'REGISTRATION CLOSES NOV 30, 2026 (11:59 PM IST)',
+    label: 'REGISTRATION CLOSES DEC 31, 2026 (12:00 AM IST)',
   });
 
   useEffect(() => {
-    const openingDate = new Date('2026-11-23T00:00:00+05:30').getTime();
-    const deadlineDate = new Date('2026-11-30T23:59:59+05:30').getTime();
+    const openingDate = new Date('2026-11-25T00:00:00+05:30').getTime();
+    const deadlineDate = new Date('2026-12-31T00:00:00+05:30').getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
 
       let target = deadlineDate;
-      let label = 'REGISTRATION CLOSES NOV 30, 2026 (11:59 PM IST)';
+      let label = 'REGISTRATION CLOSES DEC 31, 2026 (12:00 AM IST)';
 
       if (now < openingDate) {
         target = openingDate;
-        label = 'REGISTRATION OPENS NOV 23, 2026 (12:00 AM IST)';
+        label = 'REGISTRATION OPENS NOV 25, 2026 (12:00 AM IST)';
       }
 
       const distance = target - now;
@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
           hours: 0,
           minutes: 0,
           seconds: 0,
-          label: 'REGISTRATION CLOSES NOV 30, 2026 (11:59 PM IST)',
+          label: 'REGISTRATIONS CLOSED',
         });
       }
     };
@@ -134,42 +134,49 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
           {HACKATHON_CONFIG.heroSupportingText}
         </p>
 
-        {/* Three Core Fact Badges: Format, Registration Fee, Prize Pool */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-3xl mx-auto mb-10">
+        {/* Four Core Fact Badges: Format, Team Size, Category, Prize Pool */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto mb-10">
           {/* Format Badge */}
-          <div className="p-4 rounded-xl glass-teal border border-[#F3F0E8]/10 flex items-center justify-center gap-3 group hover:border-[#C6FF3D]/40 transition-all">
-            <div className="w-9 h-9 rounded-lg bg-[#C6FF3D]/10 flex items-center justify-center text-[#C6FF3D]">
-              <Globe className="w-5 h-5 text-[#C6FF3D]" />
+          <div className="p-3.5 rounded-xl glass-teal border border-[#F3F0E8]/10 flex items-center justify-center gap-2.5 group hover:border-[#C6FF3D]/40 transition-all">
+            <div className="w-8 h-8 rounded-lg bg-[#C6FF3D]/10 flex items-center justify-center text-[#C6FF3D] flex-shrink-0">
+              <Globe className="w-4 h-4 text-[#C6FF3D]" />
             </div>
             <div className="text-left">
-              <span className="text-[11px] font-mono uppercase text-[#F3F0E8]/60 block leading-tight">Format</span>
-              <span className="text-sm sm:text-base font-bold text-[#F3F0E8]">100% Online Hackathon</span>
+              <span className="text-[10px] font-mono uppercase text-[#F3F0E8]/60 block leading-tight">Format</span>
+              <span className="text-xs sm:text-sm font-bold text-[#F3F0E8]">100% Online</span>
             </div>
           </div>
 
-          {/* Registration Fee */}
-          <div className="p-4 rounded-xl glass-teal border border-[#C6FF3D]/30 flex items-center justify-center gap-3 group hover:border-[#C6FF3D] transition-all bg-[#0a3534]/60">
-            <div className="w-9 h-9 rounded-lg bg-[#C6FF3D]/20 flex items-center justify-center text-[#C6FF3D]">
-              <Cpu className="w-5 h-5 text-[#C6FF3D]" />
+          {/* Team Size */}
+          <div className="p-3.5 rounded-xl glass-teal border border-[#C6FF3D]/30 flex items-center justify-center gap-2.5 group hover:border-[#C6FF3D] transition-all bg-[#0a3534]/60">
+            <div className="w-8 h-8 rounded-lg bg-[#C6FF3D]/20 flex items-center justify-center text-[#C6FF3D] flex-shrink-0">
+              <Users className="w-4 h-4 text-[#C6FF3D]" />
             </div>
             <div className="text-left">
-              <span className="text-[11px] font-mono uppercase text-[#C6FF3D] block leading-tight font-semibold">Entry Pass (Unstop)</span>
-              <span className="text-sm sm:text-base font-bold text-[#F3F0E8]">
-                Fee: <span className="text-[#C6FF3D] font-mono">100% Free</span> <span className="text-[10px] text-[#F3F0E8]/60 font-normal">₹0 Fee</span>
-              </span>
+              <span className="text-[10px] font-mono uppercase text-[#C6FF3D] block leading-tight font-semibold">Team Size</span>
+              <span className="text-xs sm:text-sm font-bold text-[#F3F0E8] font-mono">1 - 2 Members</span>
+            </div>
+          </div>
+
+          {/* Category */}
+          <div className="p-3.5 rounded-xl glass-teal border border-[#F2B544]/30 flex items-center justify-center gap-2.5 group hover:border-[#F2B544] transition-all bg-[#0a3534]/60">
+            <div className="w-8 h-8 rounded-lg bg-[#F2B544]/20 flex items-center justify-center text-[#F2B544] flex-shrink-0">
+              <Cpu className="w-4 h-4 text-[#F2B544]" />
+            </div>
+            <div className="text-left">
+              <span className="text-[10px] font-mono uppercase text-[#F2B544] block leading-tight font-semibold">Category</span>
+              <span className="text-xs sm:text-sm font-bold text-[#F3F0E8]">AI Engineering</span>
             </div>
           </div>
 
           {/* Prize Pool */}
-          <div className="p-4 rounded-xl glass-teal border border-[#FFD700]/30 flex items-center justify-center gap-3 group hover:border-[#FFD700]/70 transition-all bg-[#FFD700]/5">
-            <div className="w-9 h-9 rounded-lg bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700]">
-              <Trophy className="w-5 h-5 text-[#FFD700]" />
+          <div className="p-3.5 rounded-xl glass-teal border border-[#FFD700]/30 flex items-center justify-center gap-2.5 group hover:border-[#FFD700]/70 transition-all bg-[#FFD700]/5">
+            <div className="w-8 h-8 rounded-lg bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] flex-shrink-0">
+              <Trophy className="w-4 h-4 text-[#FFD700]" />
             </div>
             <div className="text-left">
-              <span className="text-[11px] font-mono uppercase text-[#FFD700] block leading-tight font-semibold">Total Prize Pool</span>
-              <span className="text-sm sm:text-base font-bold text-[#F3F0E8]">
-                Total: <span className="text-[#FFD700] font-mono">₹24,000</span>
-              </span>
+              <span className="text-[10px] font-mono uppercase text-[#FFD700] block leading-tight font-semibold">Prize Pool</span>
+              <span className="text-xs sm:text-sm font-bold text-[#F3F0E8] font-mono">₹24,000 (Free)</span>
             </div>
           </div>
         </div>
@@ -195,7 +202,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
             onClick={onExploreClick}
             className="w-full sm:w-auto px-8 py-4 text-base sm:text-lg font-semibold rounded-xl text-[#F3F0E8] border border-[#F3F0E8]/30 hover:border-[#C6FF3D] hover:text-[#C6FF3D] hover:bg-[#073B3A]/80 transition-all duration-200 cursor-pointer flex items-center justify-center gap-2"
           >
-            <span>Explore the Challenge</span>
+            <span>Explore Rounds & Timeline</span>
             <ArrowRight className="w-4 h-4 text-[#C6FF3D]" />
           </button>
         </div>
@@ -237,7 +244,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
         {/* Notice line */}
         <div className="mt-8 inline-flex items-center gap-2 text-xs text-[#F3F0E8]/70 font-mono">
           <ShieldAlert className="w-3.5 h-3.5 text-[#C6FF3D]" />
-          <span>Registration opens Nov 23 • Closes Nov 30 at 11:59 PM IST • 100% Free Entry (₹0 Fee)</span>
+          <span>Registrations Open: Nov 25 – Dec 31, 2026 • 100% Free Entry • Team Size: 1 - 2 Members</span>
         </div>
       </div>
     </section>

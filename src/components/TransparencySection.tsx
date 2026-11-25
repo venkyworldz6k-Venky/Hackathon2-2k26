@@ -17,7 +17,7 @@ export const TransparencySection: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#073B3A] border border-[#F2B544]/40 text-[#F2B544] text-xs font-mono font-bold mb-4 tracking-wider uppercase">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>FINANCIAL INTEGRITY & ETHICAL GOVERNANCE</span>
+            <span>100% FREE & TRANSPARENT</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black text-[#F3F0E8] font-display tracking-tight mb-4">
@@ -41,14 +41,14 @@ export const TransparencySection: React.FC = () => {
                 CATEGORY A
               </span>
               <h3 className="text-xl font-bold text-[#F3F0E8] font-display mb-3">
-                100% Free Registration
+                100% Free Entry
               </h3>
               <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed mb-4">
-                <strong>₹0 entry fee for all participants</strong>, hosted on Unstop. The guaranteed <strong>₹24,000 cash prize pool</strong> and cloud infrastructure are 100% funded and sponsored by Proton Solutions.
+                <strong>₹0 registration fee</strong> on Unstop. The ₹24,000 cash prizes and event infrastructure are 100% sponsored by Proton Solutions.
               </p>
             </div>
             <div className="pt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#C6FF3D]">
-              • Zero Fees or Hidden Charges
+              • Zero Fees or Hidden Costs
             </div>
           </div>
 
@@ -62,14 +62,14 @@ export const TransparencySection: React.FC = () => {
                 CATEGORY B
               </span>
               <h3 className="text-xl font-bold text-[#F3F0E8] font-display mb-3">
-                Optional Direct Donations
+                Direct NGO Donations
               </h3>
               <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed mb-4">
-                If participants or corporate sponsors wish to donate directly to {ngoPartner.name}, they must use the NGO's official, legally authorized 80G tax-exempt donation channels.
+                Anyone wishing to donate to {ngoPartner.name} may do so directly through the NGO's official 80G tax-exempt portal.
               </p>
             </div>
             <div className="pt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#F2B544]">
-              • Website Does Not Collect Donations
+              • This Website Never Collects Donations
             </div>
           </div>
 
@@ -83,14 +83,14 @@ export const TransparencySection: React.FC = () => {
                 CATEGORY C
               </span>
               <h3 className="text-xl font-bold text-[#F3F0E8] font-display mb-3">
-                Event Operational Contribution
+                Community Partnership
               </h3>
               <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed mb-4">
-                Any agreed contribution from hackathon operational surplus will be formally transferred to the NGO partner and published with verifiable bank transfer receipts.
+                Proton Solutions works directly with ROOTS & RISE Foundation to turn the best hackathon projects into real community pilots.
               </p>
             </div>
             <div className="pt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#E98268]">
-              • Published in Post-Event Report
+              • Grassroots Impact & Pilot Projects
             </div>
           </div>
         </div>
@@ -100,10 +100,10 @@ export const TransparencySection: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-[#F3F0E8]/10 mb-6">
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-[#C6FF3D] font-bold block mb-1">
-                FINANCIAL DISCLOSURE ARCHITECTURE
+                EVENT SPONSORSHIP & FUNDING
               </span>
               <h4 className="text-xl sm:text-2xl font-black text-[#F3F0E8] font-display">
-                Itemized Transparency Ledger
+                How This Hackathon Is Funded
               </h4>
             </div>
 

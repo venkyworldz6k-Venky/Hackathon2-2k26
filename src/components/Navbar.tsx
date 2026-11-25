@@ -57,7 +57,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </span>
               </div>
               <span className="text-sm sm:text-base font-bold text-[#F3F0E8] tracking-tight group-hover:text-white transition-colors">
-                Gemini Agentic 2026
+                {HACKATHON_CONFIG.shortName}
               </span>
             </div>
           </a>

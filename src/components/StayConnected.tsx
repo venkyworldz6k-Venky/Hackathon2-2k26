@@ -55,8 +55,7 @@ export const StayConnected: React.FC = () => {
 
               {/* Description */}
               <p className="text-[#073B3A]/85 text-sm sm:text-base leading-relaxed mb-6 font-medium">
-                Complete the official participant information form to provide the necessary details for the
-                Gemini Agentic Coding Hackathon 2026.
+                Complete the official participant information form to provide the necessary details for {HACKATHON_CONFIG.eventName}.
               </p>
 
               {/* Highlights */}
@@ -136,7 +135,7 @@ export const StayConnected: React.FC = () => {
                   <div className="w-5 h-5 rounded-full bg-[#073B3A] text-[#C6FF3D] flex items-center justify-center flex-shrink-0">
                     <CheckCircle2 className="w-3.5 h-3.5" />
                   </div>
-                  <span>Live winner announcements on Dec 9, 2026 (5:00 PM IST)</span>
+                  <span>Live winner announcements on Jan 31, 2027 (Grand Finale)</span>
                 </div>
               </div>
             </div>

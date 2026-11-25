@@ -195,7 +195,7 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <div className="p-3.5 rounded-xl bg-[#052928] border border-[#F3F0E8]/10 text-xs text-[#F3F0E8]/70 leading-relaxed space-y-2">
               <p>
-                Participation in the Gemini Agentic Coding Hackathon 2026 is <strong>100% free of charge (₹0 fee)</strong>.
+                Participation in {HACKATHON_CONFIG.eventName} is <strong>100% free of charge (₹0 fee)</strong>.
               </p>
               <p className="text-[11px] text-[#F3F0E8]/60">
                 Registration is open to all developers and students via Unstop with zero entry cost. No payment or banking information is collected.
@@ -214,7 +214,7 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#F3F0E8]/60 font-mono">
           <p>© 2026 Proton Solutions in collaboration with {ngoPartner.name}. All Rights Reserved.</p>
           <div className="flex items-center gap-4">
-            <span>Gemini Agentic Coding Hackathon 2026</span>
+            <span>{HACKATHON_CONFIG.eventName}</span>
             <button
               onClick={scrollToTop}
               className="p-2 rounded-lg bg-[#073B3A] text-[#C6FF3D] hover:bg-[#0a4c4b] transition-colors"

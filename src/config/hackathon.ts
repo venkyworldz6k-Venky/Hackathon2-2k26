@@ -1,35 +1,94 @@
 /**
- * Configuration for Gemini Agentic Coding Hackathon 2026
- * Organized by Proton Solutions in Collaboration with ROOTS & RISE Foundation
+ * Configuration for AI CodeStorm 2026
+ * Organised by Proton Solutions
  * 
- * Centralized Event, Partner, Social Impact & Governance Configuration
+ * Centralized Event, Stages, Domains, Eligibility & Governance Configuration
  */
 
 export const HACKATHON_CONFIG = {
   // Event Metadata
-  eventName: "Gemini Agentic Coding Hackathon 2026",
-  shortName: "Gemini Agentic 2026",
-  tagline: "Build Intelligent. Think Autonomous. Create a Better Tomorrow.",
-  heroHeading: "Build Intelligent. Create Impact. Change Tomorrow.",
-  heroSupportingText: "Join Gemini Agentic Coding Hackathon 2026, where autonomous AI meets real-world challenges. Collaborate, innovate and develop intelligent solutions that can contribute to a better society.",
-  badgeLabel: "Technology Meets Social Impact",
+  eventName: "AI CodeStorm 2026",
+  shortName: "AI CodeStorm 2026",
+  tagline: "The Future of Coding is Powered by AI — It's Time to Build It!",
+  heroHeading: "Build Intelligent. Code Autonomous. Shape Tomorrow.",
+  heroSupportingText: "AI CodeStorm 2026 is an innovation-driven hackathon by Proton Solutions. Transform creative ideas into practical, intelligent, and impactful software solutions using AI-powered coding tools, LLMs, Generative AI, and autonomous AI agents.",
+  badgeLabel: "AI Engineering Hackathon",
   format: "100% Online",
-  collaborationDescription: "An AI innovation initiative organised by Proton Solutions in collaboration with ROOTS & RISE Foundation, bringing together developers, students and innovators to build intelligent technology solutions while contributing to meaningful social impact.",
+  category: "AI Engineering",
+  teamSizeText: "1 - 2 Members",
+  minTeamSize: 1,
+  maxTeamSize: 2,
+  collaborationDescription: "An innovation-driven online AI hackathon organised by Proton Solutions in collaboration with ROOTS & RISE Foundation. Build practical, intelligent, and impactful software solutions across education, healthcare, automation, business, cybersecurity, and productivity.",
+
+  // Registration Timeline (25 Nov 26, 12:00 AM to 31 Dec 26, 12:00 AM IST)
+  registrationTimeline: {
+    startDateText: "Nov 25, 2026 • 12:00 AM IST",
+    endDateText: "Dec 31, 2026 • 12:00 AM IST",
+    startDateIso: "2026-11-25T00:00:00+05:30",
+    endDateIso: "2026-12-31T00:00:00+05:30",
+  },
+
+  // Eligibility
+  eligibility: {
+    summary: "Undergraduate, Postgraduate, Engineering Students, Freshers, and Experienced Professionals across India.",
+    categories: [
+      {
+        title: "Undergraduate Students",
+        desc: "College students exploring AI development, agent loops, and software engineering."
+      },
+      {
+        title: "Postgraduate & Researchers",
+        desc: "Grad students and researchers specializing in AI/ML, NLP, and LLM applications."
+      },
+      {
+        title: "Engineering Students",
+        desc: "Aspiring engineers passionate about building scalable, production-ready AI tools."
+      },
+      {
+        title: "Freshers & Early Devs",
+        desc: "Recent graduates eager to showcase practical AI engineering projects on their portfolio."
+      },
+      {
+        title: "Experienced Professionals",
+        desc: "Software developers, data engineers, and AI practitioners building next-gen apps."
+      },
+      {
+        title: "Solo or Duo (1 - 2 Members)",
+        desc: "Participate solo or team up with 1 partner to collaborate on code and presentation."
+      }
+    ]
+  },
+
+  // What to Expect
+  whatToExpect: [
+    "Build innovative applications using Artificial Intelligence.",
+    "Explore AI-assisted coding and software development.",
+    "Experiment with Generative AI, LLMs, and autonomous AI agents.",
+    "Solve real-world problems through technology.",
+    "Showcase your creativity, technical knowledge, and problem-solving skills.",
+    "Compete with innovative developers and aspiring entrepreneurs."
+  ],
+
+  // Why Participate
+  whyParticipate: [
+    "Gain practical experience in AI-powered development.",
+    "Build projects that demonstrate your technical abilities.",
+    "Learn and experiment with emerging AI technologies.",
+    "Receive recognition for your innovation and creativity.",
+    "Get an opportunity to showcase your work before an expert jury."
+  ],
 
   // Organizational Partners
   technologyOrganizer: {
     name: "Proton Solutions",
     role: "Technology Organiser",
     tagline: "Pioneering Autonomous Systems & Developer Innovation",
-    description: "Proton Solutions is a next-generation technology organization focused on cultivating cutting-edge engineering talent and accelerating innovation in artificial intelligence, cloud systems, and autonomous computing.",
+    description: "Proton Solutions is a next-generation technology organization cultivating cutting-edge engineering talent and accelerating innovation in artificial intelligence, cloud systems, and autonomous computing.",
     responsibilities: [
-      "Hackathon planning, curriculum and execution",
-      "Technical infrastructure and cloud runtime environment",
-      "Problem statements and technical challenges formulation",
-      "Participant communication and developer support desk",
-      "Technical evaluation and code auditing",
-      "Project mentoring by senior AI engineers",
-      "Submission management and grand finale judging coordination"
+      "Hackathon planning, curriculum, and technical platform",
+      "Problem statements and AI engineering challenges",
+      "Mentorship from senior AI engineers and researchers",
+      "Evaluation, judging coordination, and prize distribution"
     ],
     contactEmail: "potrontech-hr@proton.me",
     website: "https://protonsolutions.tech"
@@ -40,224 +99,221 @@ export const HACKATHON_CONFIG = {
     shortName: "ROOTS & RISE",
     role: "Official Social Impact Collaboration Partner",
     tagline: "Growing Together. Changing Lives.",
-    description: "ROOTS & RISE Foundation is a community-driven nonprofit organization empowering rural India across 142 Gram Panchayats through quality education, women self-help collectives, water conservation, sustainable agriculture, and accessible healthcare.",
-    mission: "To partner with rural and tribal communities to eliminate generational poverty through dignified livelihoods, equitable access to quality education, community-controlled water systems, and women-led economic self-reliance.",
-    vision: "An India of flourishing, resilient villages where every child enjoys joyful learning, every woman exercises economic freedom, every farmer practices ecological agriculture, and human dignity is universally respected.",
+    description: "ROOTS & RISE Foundation is a registered non-profit working with rural communities across 142 Gram Panchayats in education, clean water, healthcare, and livelihoods.",
+    mission: "To help rural families overcome poverty through quality education, clean water, and sustainable livelihoods.",
+    vision: "Thriving village communities where everyone has access to education, healthcare, and economic opportunity.",
     legalStatus: "Section 8 Non-Profit Company (Registered in India)",
     cin: "U85300DL2021NPL389012",
-    registrationInfo: "Registered Section 8 Non-Profit • CIN: U85300DL2021NPL389012 • Section 80G & 12A Certified • FCRA Compliant",
+    registrationInfo: "Registered Section 8 Non-Profit • CIN: U85300DL2021NPL389012 • 80G & 12A Certified",
     taxExemption: "Section 80G & 12A Certified under the Indian Income Tax Act",
     website: "https://roots-and-rise-l27a.vercel.app/",
     contactEmail: "contact@rootsandrise.org",
     volunteerEmail: "volunteer@rootsandrise.org",
     phone: "+91 11 4987 6500 / +91 11 4987 6501",
-    workingHours: "Monday to Friday: 9:30 AM – 5:30 PM IST | Saturday: 10:00 AM – 2:00 PM IST",
+    workingHours: "Monday to Friday: 9:30 AM – 5:30 PM IST",
     registeredOffice: "B-14 Institutional Area, New Delhi 110016",
-    tribalHub: "Gram Seva Bhavan, Bichhiya Road, Mandla – 481661 (Madhya Pradesh)",
-    areasOfOperation: "142 Gram Panchayats across Rajasthan (Barmer, Jalore), Madhya Pradesh (Mandla Tribal Hub), Odisha (Mayurbhanj, Keonjhar), and West Bengal (Sundarbans)",
+    tribalHub: "Gram Seva Bhavan, Bichhiya Road, Mandla (Madhya Pradesh)",
+    areasOfOperation: "142 Gram Panchayats across Rajasthan, Madhya Pradesh, Odisha, and West Bengal",
     responsibilities: [
-      "Social-impact collaboration and rural domain advisory",
-      "Providing real-world community problem contexts and field insights",
-      "Advising on grassroots scalability, ethics, and vernacular usability",
-      "Community engagement and beneficiary challenge definition",
-      "Reviewing the social relevance, impact depth, and utility of submissions",
-      "Supporting post-event impact validation and pilot implementation"
+      "Providing real grassroots challenge themes",
+      "Advising on community needs and usability",
+      "Evaluating projects for social impact"
     ],
     leadership: [
       {
         name: "Dr. Anandita Sen",
         role: "Advisory Director – Rural Public Health",
-        focusArea: "Maternal-child health & telemedicine clinics in Eastern India"
+        focusArea: "Maternal-child health & telemedicine"
       },
       {
         name: "Harishankar Meena",
         role: "Lead Strategist – Community Watersheds",
-        focusArea: "Decentralized check dams, stepwell revival & Jal Swaraj"
+        focusArea: "Decentralized water & stepwell revival"
       },
       {
         name: "Sunita Soren",
         role: "Director – Women Collectives & Livelihoods",
-        focusArea: "Women Producer Companies, Sabai grass weaving & fair market linkage"
+        focusArea: "Women producer groups & fair market access"
       },
       {
         name: "Vikram Joshi",
         role: "Operations & Volunteer Coordinator",
-        focusArea: "Fellowships, university partnerships & field camp deployments"
+        focusArea: "University partnerships & field programs"
       }
     ],
     initiatives: [
       {
-        title: "Rural Skills & Livelihood Initiative",
+        title: "Rural Skills & Livelihoods",
         category: "Livelihoods",
         stat: "600+ Youth",
-        description: "Establishing solar-powered skill development hubs training rural youth in agro-processing, textile weaving, and electrical maintenance with direct cooperative placement."
+        description: "Training rural youth in solar energy, agro-processing, and crafts with direct job placements."
       },
       {
-        title: "Joyful Learning Centers (Education for Every Child)",
+        title: "Joyful Learning Centers",
         category: "Education",
         stat: "35+ Schools",
-        description: "Upgrading 35 single-teacher tribal schools with multilingual libraries, STEM learning kits, and community teacher fellowships for first-generation learners."
+        description: "Providing books, STEM learning kits, and trained teachers to village primary schools."
       },
       {
-        title: "Jal Swaraj: Community Water & Check Dams",
+        title: "Clean Water & Stepwells",
         category: "Water & Environment",
         stat: "18 Stepwells",
-        description: "Constructing community check dams, reviving 18 historic stepwells, and deploying gravity-based bio-sand filters for fluoride-free drinking water."
+        description: "Restoring historic wells and installing clean bio-sand water filters in rural villages."
       },
       {
-        title: "Women Entrepreneurship & SHG Loom Collective",
+        title: "Women's Craft Collectives",
         category: "Women Empowerment",
         stat: "450+ Women",
-        description: "Organizing 450 rural women weavers and forest produce collectors into registered producer companies with 100% women-owned equity and direct fair market linkages."
+        description: "Helping women weavers sell handmade products directly to fair-trade buyers."
       },
       {
-        title: "Paramparik Krishi: Natural Farming & Millet Revival",
+        title: "Natural Farming Support",
         category: "Sustainable Agriculture",
         stat: "320+ Families",
-        description: "Transitioning 320 smallholder farming families to zero-chemical natural farming, desi heritage seed conservation, and bio-fertilizer preparation."
+        description: "Helping small farmers switch to chemical-free natural farming and traditional seeds."
       },
       {
-        title: "Sanjeevani: Mobile Rural Health Clinics",
+        title: "Mobile Health Clinics",
         category: "Healthcare",
         stat: "Tele-Triage",
-        description: "Deploying solar water ambulances in the Sundarbans and all-terrain medical vans with telemedicine diagnostic hubs to reach isolated hamlets."
+        description: "Bringing medical checkups and basic telemedicine to remote, hard-to-reach hamlets."
       }
     ]
   },
 
+  // Challenge Domains (Education, Healthcare, Automation, Business, Cybersecurity, Productivity)
+  socialGoodTracks: [
+    {
+      id: "track-1",
+      number: "01",
+      title: "Education & Vernacular Learning",
+      description: "AI-assisted learning companions, multilingual tutors, and interactive tools that make foundational education accessible to all learners.",
+      techFocus: "LLMs • Multilingual Audio • RAG Knowledge Retrieval",
+      communityImpact: "Empowers students across India with accessible, vernacular tutoring."
+    },
+    {
+      id: "track-2",
+      number: "02",
+      title: "Healthcare Diagnostics & Triage",
+      description: "Intelligent medical assistance, preliminary symptom checkers, tele-consultation support, and epidemic outbreak tracking agents.",
+      techFocus: "Multimodal AI • Clinical Decision Support • Structured Triage",
+      communityImpact: "Accelerates healthcare triage for remote hamlets and community clinics."
+    },
+    {
+      id: "track-3",
+      number: "03",
+      title: "Automation & Autonomous Agents",
+      description: "Multi-agent systems, tool-calling pipelines, and autonomous workflows that execute complex multi-step digital operations independently.",
+      techFocus: "Autonomous Agent Loops • Tool Calling • Swarm Coordination",
+      communityImpact: "Automates repetitive digital tasks and optimizes resource distribution."
+    },
+    {
+      id: "track-4",
+      number: "04",
+      title: "Business & Enterprise Intelligence",
+      description: "Generative AI applications for financial intelligence, market synthesis, customer insight automation, and smart decision systems.",
+      techFocus: "Enterprise LLMs • Agentic Analytics • API Integration",
+      communityImpact: "Empowers small businesses and cooperatives with enterprise-grade AI tools."
+    },
+    {
+      id: "track-5",
+      number: "05",
+      title: "Cybersecurity & Safe Systems",
+      description: "AI tools for proactive vulnerability detection, smart contract auditing, automated threat analysis, and ethical safety guardrails.",
+      techFocus: "Code Analysis • Anomaly Detection • Safety Filters",
+      communityImpact: "Protects digital systems and citizen data from cyber vulnerabilities."
+    },
+    {
+      id: "track-6",
+      number: "06",
+      title: "Developer Productivity & AI Coding",
+      description: "Next-generation developer utilities, code generation assistants, test suite synthesizers, and intelligent debugging swarms.",
+      techFocus: "Code LLMs • AST Parsing • Automated Debugging Loops",
+      communityImpact: "Boosts developer speed and democratization of software engineering."
+    }
+  ],
+
   // Social Impact Section Metadata ("Technology With a Purpose")
   socialImpact: {
     sectionTitle: "Technology With a Purpose",
-    sectionSubtitle: "Bridging AI Innovation with Real-World Community Needs",
-    description: "We believe technology should solve meaningful problems. Through our collaboration with ROOTS & RISE Foundation, we aim to encourage innovators to explore how AI and autonomous systems can support rural communities, improve access to opportunities and contribute to sustainable development.",
+    sectionSubtitle: "AI Innovation for Real Community Needs",
+    description: "We believe technology should solve meaningful problems. In partnership with ROOTS & RISE Foundation, participants build smart AI agents that help rural communities thrive.",
     focusAreas: [
       {
         id: "rural-development",
         number: "01",
         title: "Rural Development & Agri-Tech",
-        tagline: "Agri-Tech & Sustainable Watersheds",
-        description: "Empowering smallholder farmers and village watershed committees with autonomous crop diagnostics, weather resilience agents, and decentralized water management.",
-        impactGoal: "Enhancing farm yield and supply-chain transparency across Rajasthan and Madhya Pradesh hamlets.",
+        tagline: "Smart Farming & Water Systems",
+        description: "Helping small farmers diagnose crop diseases, predict rainfall, and manage village water resources.",
+        impactGoal: "Boost crop yields and water availability for rural farming families.",
         image: "https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?auto=format&fit=crop&w=800&q=80"
       },
       {
         id: "education-learning",
         number: "02",
-        title: "Education & Vernacular Learning",
-        tagline: "Multilingual AI Tutors & STEM Labs",
-        description: "Democratizing foundational education with autonomous bilingual tutors, audio-first learning companions, and interactive STEM learning aids tailored for rural schools.",
-        impactGoal: "Bridging the rural-urban learning divide for first-generation learners across tribal learning centers.",
+        title: "Education & Local Languages",
+        tagline: "Multilingual AI Tutors for Kids",
+        description: "Building voice-enabled AI tutors that teach school subjects in local regional languages.",
+        impactGoal: "Make quality learning accessible to children in village schools.",
         image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
       },
       {
         id: "healthcare-accessibility",
         number: "03",
-        title: "Healthcare Accessibility & Tele-Triage",
-        tagline: "Community Health & Early Outbreak Detection",
-        description: "Equipping ASHA workers and mobile health clinics with AI triage assistants, vernacular health communication bots, and symptom tracking agents.",
-        impactGoal: "Accelerating maternal and pediatric primary diagnostics across hard-to-reach tribal and riverine terrains.",
+        title: "Healthcare Access & Triage",
+        tagline: "Health Advice & Early Detection",
+        description: "Assisting local health workers with symptom checkers and early illness warning tools.",
+        impactGoal: "Help remote villages receive timely health support.",
         image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80"
       },
       {
         id: "community-empowerment",
         number: "04",
-        title: "Community & Women Empowerment",
-        tagline: "Artisan Producer Collectives & Fair Trade",
-        description: "Building autonomous systems that connect rural women artisans directly to fair trade buyers, eliminating broker exploitation and streamlining welfare access.",
-        impactGoal: "Unlocking direct economic dignity and citizen entitlement navigation for rural families.",
+        title: "Livelihoods & Women Artisans",
+        tagline: "Fair Trade & Fair Markets",
+        description: "Connecting rural women weavers and craftspeople directly to online buyers at fair prices.",
+        impactGoal: "Enable financial independence for rural women artisans.",
         image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
       }
     ]
   },
 
-  // Hackathon Track: AI for Social Good (Suggested Themes)
-  socialGoodTracks: [
-    {
-      id: "track-1",
-      number: "01",
-      title: "AI-Powered Rural Education Assistance",
-      description: "Autonomous voice-first and vernacular multi-agent tutors that explain complex STEM concepts in native regional languages without requiring high-speed broadband.",
-      techFocus: "Gemini Multimodal • Offline Vector Retrieval • Audio In/Out Agent Loops",
-      communityImpact: "Supports joyful foundational literacy and STEM learning in tribal community schools."
-    },
-    {
-      id: "track-2",
-      number: "02",
-      title: "Smart Agricultural Support & Advisory",
-      description: "Proactive crop pest diagnosis and weather risk warning agents that analyze smartphone photos and regional rainfall patterns to advise smallholders in real time.",
-      techFocus: "Gemini Vision • Soil Data Integration • Action Planning Swarms",
-      communityImpact: "Protects harvest yields and assists transition to chemical-free natural farming."
-    },
-    {
-      id: "track-3",
-      number: "03",
-      title: "Rural Healthcare Information & Triage",
-      description: "Intelligent symptom-checking workflows designed for mobile clinics and ASHA health volunteers, alerting medical teams to potential seasonal outbreaks.",
-      techFocus: "Agentic Tool Use • Medical Knowledge Graphs • Structured Triage APIs",
-      communityImpact: "Speeds up early treatment in remote riverine and forest hamlets."
-    },
-    {
-      id: "track-4",
-      number: "04",
-      title: "AI-Based Livelihood & Skill Matching",
-      description: "Autonomous skill mapping and vernacular resume builders matching rural youth and women artisans with certified vocational opportunities and cooperative buyers.",
-      techFocus: "Multi-Agent Profiling • Conversational Extraction • Geo-spatial Job Routing",
-      communityImpact: "Connects rural trainees directly to fair wages and self-help cooperative ventures."
-    },
-    {
-      id: "track-5",
-      number: "05",
-      title: "Community Resource & Water Management",
-      description: "Sensor-data and drone-imagery reasoning agents that optimize community check dams, stepwell reserves, and fluoride-free water allocation during droughts.",
-      techFocus: "Autonomous Time-Series Reasoning • Alert Dispatch • Predictive Maintenance",
-      communityImpact: "Preserves critical drinking and irrigation water in drought-vulnerable villages."
-    },
-    {
-      id: "track-6",
-      number: "06",
-      title: "Digital Access to Government Welfare Schemes",
-      description: "Bilingual entitlement navigators that guide citizens through documentation requirements for scholarships, pensions, Kisan credit, and housing subsidies.",
-      techFocus: "Agentic Document Parsing • Multilingual Speech • Form Auto-Filling Agents",
-      communityImpact: "Ensures government welfare subsidies reach verified families without broker commissions."
-    }
-  ],
-
-  // Transparency & Financial Governance ("Your Participation. A Bigger Purpose.")
+  // Transparency & Financial Governance
   transparency: {
     sectionTitle: "Your Participation. A Bigger Purpose.",
-    sectionSubtitle: "Ethical Stewardship & Transparent Collaboration",
-    summary: "Proton Solutions and ROOTS & RISE Foundation believe in 100% transparency. Participation in this hackathon is 100% Free of charge. The guaranteed ₹24,000 cash prizes and cloud infrastructure are fully funded by Proton Solutions.",
-    disclaimer: "Official Policy: Participation in the Gemini Agentic Coding Hackathon 2026 is 100% free of charge. No registration fee, subscription, or payment is collected from participants at any stage.",
+    sectionSubtitle: "100% Free • Open & Transparent",
+    summary: "Participation in AI CodeStorm 2026 is 100% free with ₹0 registration fee. The entire ₹24,000 prize pool and technical platform are fully sponsored by Proton Solutions.",
+    disclaimer: "Official Policy: Joining this hackathon is 100% free of charge. No registration fee or payment is ever collected from participants.",
     financialBreakdown: [
       {
-        item: "Participant Registration Fee",
+        item: "Registration Fee",
         share: "₹0 (100% Free)",
-        description: "Open to all eligible students and developers with zero entry cost."
+        description: "Open to all students and developers with zero entry cost."
       },
       {
-        item: "Hosting & Platform Access",
+        item: "Hosting Platform",
         share: "Free on Unstop",
-        description: "Event hosted on Unstop with free application submission."
+        description: "Event registration and submission hosted freely on Unstop."
       },
       {
-        item: "Guaranteed Cash Prize Pool",
-        share: "₹24,000 Total Allocation",
+        item: "Guaranteed Cash Prizes",
+        share: "₹24,000 Total",
         description: "100% funded by Proton Solutions: 🥇 ₹10k, 🥈 ₹8k, 🥉 ₹6k."
       },
       {
-        item: "Technical & Organizing Infrastructure",
+        item: "Infrastructure & Compute",
         share: "Proton Solutions Sponsored",
-        description: "Cloud compute, LLM evaluation tooling, and Google Meet servers funded by organizers."
+        description: "Cloud servers, evaluation tools, and Meet sessions fully covered."
       },
       {
-        item: "NGO Social Impact Collaboration",
+        item: "NGO Social Partnership",
         share: "Community Advisory",
-        description: "Proton Solutions direct collaboration and support for ROOTS & RISE rural initiatives."
+        description: "ROOTS & RISE Foundation provides real-world community insights."
       },
       {
-        item: "Final Transfer Confirmation",
-        share: "Public Impact Report",
-        description: "Published transparently on this portal with audited prize distributions."
+        item: "Public Transparency",
+        share: "Audit & Report",
+        description: "Winner announcements and prize transfers published openly."
       }
     ]
   },
@@ -274,9 +330,9 @@ export const HACKATHON_CONFIG = {
   refundPolicyText: "Registration is 100% free of charge. No entry fees or payments are collected from participants. Terms and Conditions Apply.",
   refundNoticeHeadline: "100% FREE PARTICIPATION: Open to all innovators with zero registration fee.",
 
-  // Official Channel & Registration Links (Configurable)
+  // Official Channel & Registration Links
   placeholders: {
-    unstopEventUrl: "https://unstop.com/hackathons/gemini-agentic-coding-hackathon-2026-proton-solutions",
+    unstopEventUrl: "https://unstop.com/hackathons/ai-codestorm-2026-proton-solutions",
     googleFormUrl: "https://forms.gle/YKmaTnHpTi65envRA",
     whatsappChannelUrl: "https://whatsapp.com/channel/0029VbDpw0m1iUxbAtgMO71Z",
     discordServerUrl: "#",
@@ -293,68 +349,112 @@ export const HACKATHON_CONFIG = {
     policy: "Participation is 100% free of charge. No payment or financial information is required.",
   },
 
-  // Official Six-Phase Event Timeline (Indian Standard Time - IST)
+  // Official Four-Stage Event Timeline (Indian Standard Time - IST)
   importantDates: [
     {
       phaseNumber: "01",
-      title: "REGISTRATION OPEN",
-      date: "November 23, 2026",
-      time: "Portal Live • 100% Online",
-      description: "Registration opens for individuals and teams of up to 4 members. Fee: 100% Free on Unstop. Complete registration before the deadline.",
-      status: "active" as const,
-      badge: "OPENS NOV 23",
-      highlightType: "live-registration" as const,
+      roundNumber: 1,
+      title: "Round 1 – Idea & Innovation Submission",
+      shortTitle: "Idea & Innovation",
+      date: "02 Jan 27, 12:00 AM – 07 Jan 27, 12:00 AM IST",
+      time: "Online on Unstop",
+      description: "Submission round through Unstop platform. Propose creative ideas and concepts addressing real-world problems using modern AI.",
+      status: "upcoming" as const,
+      badge: "ROUND 1 • UNSTOP",
+      highlightType: "standard" as const,
+      submissionRequirements: [
+        "Idea submission via Unstop platform",
+        "Problem statement definition and target domain",
+        "Proposed AI architecture (LLMs, GenAI, or AI Agents)",
+        "Innovation approach and expected impact"
+      ],
+      evaluationCriteria: [
+        "Innovation & Originality",
+        "Relevance to Challenge Domains",
+        "Feasibility of AI Implementation"
+      ]
     },
     {
       phaseNumber: "02",
-      title: "REGISTRATION CLOSING & VERIFICATION",
-      date: "November 30 – December 2, 2026",
-      time: "Closes Nov 30 at 11:59 PM IST",
-      description: "Registration closes Nov 30 at 11:59 PM IST. Organizing team verifies participant details and Google Form submissions. Confirmation sent via email.",
+      roundNumber: 2,
+      title: "Round 2 – AI Development & Prototype",
+      shortTitle: "AI Prototype & MVP",
+      date: "08 Jan 27, 12:00 AM – 18 Jan 27, 12:00 AM IST",
+      time: "Development & Submission",
+      description: "Participants selected in Round 1 transform their ideas into functional AI-powered prototypes demonstrating practical implementation.",
       status: "upcoming" as const,
-      badge: "CLOSING & VERIFICATION",
+      badge: "ROUND 2 • PROTOTYPE",
       highlightType: "standard" as const,
+      submissionRequirements: [
+        "1. Working prototype or MVP",
+        "2. GitHub repository link with source code",
+        "3. Short demonstration video (3–5 minutes)",
+        "4. Technical explanation of technologies used",
+        "5. Screenshots demonstrating the application"
+      ],
+      evaluationCriteria: [
+        "Implementation and functionality – 30%",
+        "Effective use of AI technologies – 25%",
+        "Technical execution – 20%",
+        "User experience and usability – 15%",
+        "Innovation – 10%"
+      ]
     },
     {
       phaseNumber: "03",
-      title: "PROBLEM STATEMENT ANNOUNCEMENT",
-      date: "December 3, 2026",
-      time: "10:00 AM IST",
-      description: "Official problem statements, community challenge instructions, technical guidelines, and evaluation criteria shared with selected participants via email.",
+      roundNumber: 3,
+      title: "Round 3 – Final Project Development & Submission",
+      shortTitle: "Final App Submission",
+      date: "19 Jan 27, 12:00 AM – 25 Jan 27, 12:01 AM IST",
+      time: "Enhanced Application",
+      description: "Qualified teams enhance prototypes into complete, production-ready AI applications focusing on performance, reliability, and real impact.",
       status: "upcoming" as const,
-      badge: "PROBLEM STATEMENTS",
-      highlightType: "standard" as const,
+      badge: "ROUND 3 • FINAL APP",
+      highlightType: "challenge-24h" as const,
+      submissionRequirements: [
+        "1. Complete working application or software solution",
+        "2. Final GitHub repository with source code",
+        "3. Live deployment link, where applicable",
+        "4. Final project documentation (PDF)",
+        "5. Demonstration video (5–7 minutes)",
+        "6. Explanation of AI architecture and implementation",
+        "7. Key features, limitations, and future improvements"
+      ],
+      evaluationCriteria: [
+        "Completeness and functionality – 25%",
+        "AI implementation and technical depth – 25%",
+        "Innovation and originality – 20%",
+        "Practical applicability and impact – 15%",
+        "Documentation and presentation – 15%"
+      ]
     },
     {
       phaseNumber: "04",
-      title: "24-HOUR CODING HACKATHON",
-      date: "December 4–5, 2026",
-      time: "Start: Dec 4, 10:00 AM IST • End: Dec 5, 10:00 AM IST",
-      description: "Competition Duration: 24 Hours non-stop. Build innovative AI solutions using Gemini, Agentic AI concepts, and social-impact workflows into functional prototypes.",
+      roundNumber: 4,
+      title: "Round 4 – Final Presentation & Project Demonstration",
+      shortTitle: "Grand Finale (Live Pitch)",
+      date: "30 Jan 27, 12:00 AM – 31 Jan 27, 12:01 AM IST",
+      time: "Live on Google Meet",
+      description: "Welcome to the Grand Finale! Shortlisted finalists present completed AI-powered applications before the judging panel and compete for ₹24,000.",
       status: "upcoming" as const,
-      badge: "⚡ 24-HOUR CODING HACKATHON",
-      highlightType: "challenge-24h" as const,
-    },
-    {
-      phaseNumber: "05",
-      title: "PROJECT SUBMISSION & FINALIST SELECTION",
-      date: "December 5–8, 2026",
-      time: "Submission via Google Form",
-      description: "Submit complete project via Google Form (GitHub Repo, PPT, technical docs, architecture, implementation details, and demo video). Shortlisted finalists invited via email.",
-      status: "upcoming" as const,
-      badge: "SUBMISSION & SHORTLISTING",
-      highlightType: "standard" as const,
-    },
-    {
-      phaseNumber: "06",
-      title: "ONLINE PRESENTATION & GRAND FINALE",
-      date: "December 9, 2026",
-      time: "5:00 PM IST via Google Meet",
-      description: "Shortlisted finalists present projects online through Google Meet. Final winner selection & ₹24,000 prize distribution: 🥇 1st ₹10,000, 🥈 2nd ₹8,000, 🥉 3rd ₹6,000.",
-      status: "upcoming" as const,
-      badge: "GRAND FINALE (GOOGLE MEET)",
+      badge: "GRAND FINALE • LIVE PITCH",
       highlightType: "finale" as const,
-    },
+      submissionRequirements: [
+        "1. Live project demonstration",
+        "2. Presentation explaining problem & proposed solution",
+        "3. Technical architecture and AI implementation overview",
+        "4. Explanation of the project's unique features",
+        "5. Future development roadmap",
+        "6. Judges' question-and-answer session"
+      ],
+      evaluationCriteria: [
+        "Innovation and originality – 25%",
+        "Technical implementation – 25%",
+        "Working demonstration – 20%",
+        "Real-world impact – 15%",
+        "Presentation & Q&A – 15%"
+      ]
+    }
   ],
 
   // Prizes
@@ -364,31 +464,31 @@ export const HACKATHON_CONFIG = {
       rank: 1,
       title: "Grand Champion",
       amount: "₹10,000",
-      amountNumber: 10000,
+      rawAmount: 10000,
       badge: "🥇 1ST PLACE",
-      tagline: "Top Autonomous Agent Solution",
+      tagline: "Top Innovation & Technical Excellence",
       accent: "gold" as const,
       perks: [
         "Cash Prize of ₹10,000 directly to bank account",
-        "Official Proton Solutions Winner Trophy & Certificate",
-        "Social Impact Innovation Spotlight feature",
-        "Featured project showcase on Proton Solutions official network"
+        "Winner Trophy & Certificate of Grand Excellence",
+        "Direct Mentorship & Job/Internship Referral Opportunity",
+        "Spotlight feature across Proton Solutions community"
       ]
     },
     {
       place: "SECOND PRIZE",
       rank: 2,
-      title: "Runner-Up",
+      title: "First Runner-Up",
       amount: "₹8,000",
-      amountNumber: 8000,
+      rawAmount: 8000,
       badge: "🥈 2ND PLACE",
-      tagline: "Outstanding Agent Architecture",
+      tagline: "Outstanding AI Engineering",
       accent: "silver" as const,
       perks: [
         "Cash Prize of ₹8,000 directly to bank account",
-        "Official Runner-Up Certificate of Excellence",
-        "Direct Mentorship Session with AI Tech Leads",
-        "Featured spotlight on Proton Solutions Community"
+        "Runner-Up Certificate of Excellence",
+        "Direct Mentorship with AI Tech Leads",
+        "Featured spotlight on Proton Community"
       ]
     },
     {
@@ -396,7 +496,7 @@ export const HACKATHON_CONFIG = {
       rank: 3,
       title: "Second Runner-Up",
       amount: "₹6,000",
-      amountNumber: 6000,
+      rawAmount: 6000,
       badge: "🥉 3RD PLACE",
       tagline: "Innovative Problem Solving",
       accent: "bronze" as const,
@@ -409,80 +509,78 @@ export const HACKATHON_CONFIG = {
     }
   ],
 
-  // Terms and Conditions (10 Binding Conditions)
+  // Terms and Conditions
   termsAndConditions: [
-    "Registration is 100% free of charge for all participants.",
-    "No entry fee, payment, or banking information is required at any stage of the event.",
-    "Participants must provide accurate registration information.",
-    "Participants must follow the hackathon guidelines and event instructions.",
-    "Any plagiarism, cheating, impersonation, or unfair practices may result in disqualification.",
-    "Participants must submit their projects before the announced deadline.",
-    "The organizers reserve the right to verify submissions and determine winners according to the published judging criteria.",
-    "The hackathon will be conducted entirely online.",
-    "Any changes to the event schedule or rules will be communicated through official channels.",
-    "Participation is subject to these Terms and Conditions."
+    "Registration is 100% free of charge for all participants on Unstop.",
+    "Team size: 1 - 2 Members (participate individually or in pairs).",
+    "No entry fee, payment, or banking information is ever required.",
+    "Open to Undergraduates, Postgraduates, Engineering Students, Freshers, and Professionals.",
+    "All project code must be original and built during the hackathon rounds.",
+    "Submissions must be made on Unstop before the deadline for each round.",
+    "The event is conducted 100% online with remote mentorship and judging.",
+    "Cash prizes will be credited directly to winning team bank accounts."
   ],
 
   // Frequently Asked Questions
   faqs: [
     {
       id: "faq-1",
-      question: "Is this hackathon online or offline?",
-      answer: "The Gemini Agentic Coding Hackathon 2026 is 100% online. You can participate from anywhere in the world from the comfort of your home, campus, or office with an internet connection.",
+      question: "What is AI CodeStorm 2026?",
+      answer: "AI CodeStorm 2026 is an innovation-driven online hackathon by Proton Solutions challenging participants to build practical software applications using LLMs, Generative AI, and autonomous AI agents.",
       category: "General"
     },
     {
       id: "faq-2",
-      question: "Who is the NGO collaboration partner?",
-      answer: "The hackathon is organized by Proton Solutions in official collaboration with ROOTS & RISE Foundation (https://roots-and-rise-l27a.vercel.app/), a registered Section 8 non-profit organization (CIN: U85300DL2021NPL389012) empowering rural communities across 142 Gram Panchayats through education, women self-help collectives, water sustainability, and healthcare.",
-      category: "General"
+      question: "What is the team size?",
+      answer: "Team size is strictly 1 to 2 members. You can participate solo or as a duo.",
+      category: "Participation"
     },
     {
       id: "faq-3",
       question: "Is there any registration fee?",
-      answer: "No! Registration for the Gemini Agentic Coding Hackathon 2026 is 100% Free. There is zero entry fee for individuals or teams of up to 4 members.",
+      answer: "No! Registration is 100% Free. There are zero fees or charges on Unstop or any other portal.",
       category: "General"
     },
     {
       id: "faq-4",
-      question: "Do I need to make any payment on Unstop?",
-      answer: "No payment is required. You can complete your free registration on Unstop without any fee, and then fill out the official Proton Solutions Google Form.",
-      category: "General"
+      question: "Who is eligible to participate?",
+      answer: "Undergraduates, Postgraduates, Engineering Students, Freshers, and Experienced Professionals across India are welcome.",
+      category: "Participation"
     },
     {
       id: "faq-5",
-      question: "Who can participate?",
-      answer: "The hackathon is open to students, developers, software engineers, AI researchers, innovators, and technology enthusiasts. You can participate individually (solo) or in a team of up to 4 members.",
-      category: "Participation"
+      question: "What is the registration timeline?",
+      answer: "Registrations are open from 25 Nov 26, 12:00 AM IST to 31 Dec 26, 12:00 AM IST on Unstop.",
+      category: "General"
     },
     {
       id: "faq-6",
-      question: "How can I register for free?",
-      answer: "Visit our official Unstop event page and complete your free registration. After registering on Unstop, fill out the official Proton Solutions Google Form with your team and technical details. Our team will verify records and send confirmation via email.",
-      category: "Participation"
+      question: "What are the four rounds of the hackathon?",
+      answer: "Round 1: Idea Submission (Jan 2-7, 2027) • Round 2: Prototype & MVP (Jan 8-18) • Round 3: Final App Submission (Jan 19-25) • Round 4: Grand Finale Live Pitch (Jan 30-31).",
+      category: "Submissions"
     },
     {
       id: "faq-7",
-      question: "What is the 'AI for Social Good' track?",
-      answer: "It is a dedicated challenge category encouraging participants to build autonomous agent solutions addressing rural education, agricultural sustainability, community healthcare, and local livelihoods inspired by ROOTS & RISE Foundation's grassroots initiatives. Official problem statements will be released on December 3, 2026.",
+      question: "What are the challenge domains?",
+      answer: "You can build solutions in Education, Healthcare, Automation & AI Agents, Business, Cybersecurity, or Developer Productivity.",
       category: "Submissions"
     },
     {
       id: "faq-8",
       question: "What are the prizes?",
-      answer: "The total prize pool is ₹24,000 distributed as follows: First Prize: ₹10,000, Second Prize: ₹8,000, and Third Prize: ₹6,000, alongside official trophies, certificates, and mentorship opportunities.",
+      answer: "The total prize pool is ₹24,000 (🥇 1st ₹10,000, 🥈 2nd ₹8,000, 🥉 3rd ₹6,000) plus digital certificates for all valid submissions.",
       category: "General"
     },
     {
       id: "faq-9",
-      question: "How will winners be announced?",
-      answer: "Winners will be determined by our expert jury based on technical innovation, agent autonomy, architecture, and presentation quality. Final results will be announced live on December 9, 2026 at 5:00 PM IST via Google Meet and our official WhatsApp Channel.",
-      category: "Submissions"
+      question: "Is the hackathon online or offline?",
+      answer: "AI CodeStorm 2026 is 100% online. You can participate from anywhere in India.",
+      category: "General"
     },
     {
       id: "faq-10",
-      question: "Where can I contact the organizers?",
-      answer: "You can reach Proton Solutions directly at potrontech-hr@proton.me or via our official WhatsApp community channel and contact section on this website.",
+      question: "How do I contact the organizers?",
+      answer: "Reach out to Proton Solutions at potrontech-hr@proton.me or join our official WhatsApp channel for announcements.",
       category: "General"
     }
   ],

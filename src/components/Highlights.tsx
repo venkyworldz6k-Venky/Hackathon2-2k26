@@ -6,51 +6,59 @@ export const Highlights: React.FC = () => {
     {
       icon: <Bot className="w-6 h-6 text-[#C6FF3D]" />,
       title: "Agentic AI Challenges",
-      description: "Engineer autonomous multi-agent loops, reasoning tools, and proactive problem solvers using Gemini."
+      description: "Build autonomous AI agents that can plan, reason, and take action with Gemini."
     },
     {
       icon: <Zap className="w-6 h-6 text-[#C6FF3D]" />,
-      title: "Multi-Agent Swarms",
-      description: "Build coordinated multi-agent architectures where specialized subagents collaborate, plan, and verify actions."
+      title: "Multi-Agent Systems",
+      description: "Design teams of specialized AI agents that collaborate to solve complex problems."
     },
     {
       icon: <HeartHandshake className="w-6 h-6 text-[#F2B544]" />,
-      title: "ROOTS & RISE Impact",
-      description: "Tackle authentic grassroots challenges across 142 Gram Panchayats in education, water, and healthcare."
+      title: "Real Social Impact",
+      description: "Solve genuine challenges in village education, water conservation, and healthcare."
     },
     {
       icon: <Terminal className="w-6 h-6 text-[#C6FF3D]" />,
-      title: "Technical Mentorship",
-      description: "Direct feedback and architectural guidance from senior AI engineers and researchers at Proton Solutions."
+      title: "Expert Mentorship",
+      description: "Get technical feedback and architectural guidance from senior AI engineers."
     },
     {
       icon: <Globe className="w-6 h-6 text-[#C6FF3D]" />,
-      title: "100% Online Hackathon",
-      description: "Collaborate remotely from anywhere in India with cloud submissions, live Discord, and Google Meet finale."
+      title: "100% Online",
+      description: "Participate remotely from anywhere in India with cloud submissions and live online finale."
     },
     {
       icon: <Trophy className="w-6 h-6 text-[#FFD700]" />,
       title: "₹24,000 Cash Prizes",
-      description: "Guaranteed cash pool directly credited: 🥇 ₹10,000, 🥈 ₹8,000, 🥉 ₹6,000 plus digital certificates."
+      description: "Guaranteed cash prizes: 🥇 ₹10,000, 🥈 ₹8,000, 🥉 ₹6,000 plus digital certificates."
     }
   ];
 
   const participantCategories = [
     {
-      title: "Students & Tech Clubs",
-      desc: "Undergrad & postgrad students passionate about AI, autonomous software, and resume-defining impact."
+      title: "Undergraduate Students",
+      desc: "College students exploring AI development, coding, and software engineering."
     },
     {
-      title: "Full-Stack Developers",
-      desc: "Engineers integrating LLMs, multi-agent frameworks, and autonomous tooling into web and cloud platforms."
+      title: "Postgraduate Students",
+      desc: "Grad students and researchers specializing in AI/ML, NLP, and intelligent agents."
     },
     {
-      title: "AI Practitioners",
-      desc: "Innovators working with Gemini, MCP servers, multimodal perception, and tool-calling swarms."
+      title: "Engineering Students",
+      desc: "Aspiring engineers passionate about building scalable, production-ready AI tools."
     },
     {
-      title: "Solo or Squads (1-4)",
-      desc: "Participate individually or assemble an agile team of up to 4 members to split coding and presentation."
+      title: "Freshers",
+      desc: "Recent graduates eager to showcase practical AI engineering projects on their portfolio."
+    },
+    {
+      title: "Experienced Professionals",
+      desc: "Developers, data engineers, and AI practitioners building next-gen applications."
+    },
+    {
+      title: "Team Size: 1 - 2 Members",
+      desc: "Participate solo or team up with 1 partner to collaborate on code and presentation."
     }
   ];
 
@@ -99,7 +107,7 @@ export const Highlights: React.FC = () => {
             <span className="text-xs font-mono text-[#F3F0E8]/60">Open to developers & students across India</span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {participantCategories.map((item, idx) => (
               <div
                 key={idx}

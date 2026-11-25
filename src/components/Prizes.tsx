@@ -98,7 +98,7 @@ export const Prizes: React.FC = () => {
                 FIRST PRIZE
               </h3>
               <p className="text-center text-xs text-[#FFD700] font-mono font-bold mb-4">
-                Grand Winner • Gemini Champion
+                Grand Winner • CodeStorm Champion
               </p>
 
               <div className="text-center mb-6">

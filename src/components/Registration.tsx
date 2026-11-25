@@ -23,54 +23,53 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
     {
       stepNumber: '01',
       title: 'REGISTER ON UNSTOP',
-      subtitle: 'Free Event Registration',
+      subtitle: '100% Free Entry',
       description:
-        'Participants must visit our official Unstop event page and register for the Gemini Agentic Coding Hackathon 2026 for free. You can participate individually (solo) or as a team of up to 4 members.',
+        'Join the hackathon on Unstop with zero registration fee. You can participate solo or as a duo (1 - 2 members).',
       icon: Users,
-      badge: 'Step 1 • 100% Free',
+      badge: 'Step 1 • Free Entry',
     },
     {
       stepNumber: '02',
-      title: 'ZERO REGISTRATION FEE',
-      subtitle: '100% Free for All Participants',
+      title: 'SUBMIT GOOGLE FORM',
+      subtitle: 'Team & Contact Info',
       description:
-        'Registration is completely free of charge. There are no registration fees, platform charges, or hidden payments required on Unstop or any other portal.',
-      icon: ShieldCheck,
-      badge: 'Step 2 • ₹0 Entry Fee',
-    },
-    {
-      stepNumber: '03',
-      title: 'COMPLETE THE OFFICIAL GOOGLE FORM',
-      subtitle: 'Mandatory Information Submission',
-      description:
-        'After successfully registering on Unstop, participants must fill out the official Proton Solutions Google Form.',
+        'Fill out our quick official Google Form with your team roster, contact details, and tech experience.',
       icon: FileText,
-      badge: 'Step 3 • Required Details',
+      badge: 'Step 2 • Quick Form',
       detailsList: [
-        'Participant details (Name, Email, Phone)',
-        'College and university information',
-        'Team details & team size (1 to 4 members)',
-        'Technical background & experience level',
-        'Unstop registration confirmation details',
+        'Full name, email, and phone',
+        'College / organization name',
+        'Team members (1 - 2 members)',
+        'GitHub and technical background',
       ],
     },
     {
-      stepNumber: '04',
-      title: 'REGISTRATION VERIFICATION',
-      subtitle: 'Proton Solutions Review',
+      stepNumber: '03',
+      title: 'ROUND 1: IDEA SUBMISSION',
+      subtitle: 'Jan 02 – Jan 07, 2027',
       description:
-        'The Proton Solutions organizing team will verify Unstop registration and Google Form submissions to ensure all participant details and team rosters are authenticated.',
+        'Submit your proposed AI idea, problem selection, and implementation approach directly via Unstop.',
       icon: ShieldCheck,
-      badge: 'Step 4 • Official Review',
+      badge: 'Step 3 • Round 1',
+    },
+    {
+      stepNumber: '04',
+      title: 'ROUNDS 2 & 3: PROTOTYPE & BUILD',
+      subtitle: 'Jan 08 – Jan 25, 2027',
+      description:
+        'Transform ideas into functional prototypes in Round 2 and develop full production solutions in Round 3.',
+      icon: FileCheck,
+      badge: 'Step 4 • Dev Phase',
     },
     {
       stepNumber: '05',
-      title: 'EMAIL CONFIRMATION',
-      subtitle: 'Official Hackathon Pass',
+      title: 'ROUND 4: GRAND FINALE',
+      subtitle: 'Jan 30 – Jan 31, 2027',
       description:
-        'Eligible and selected participants will receive official confirmation, challenge briefing access, and further event instructions through their registered email addresses.',
+        'Finalists present live demonstrations before judges and compete for ₹24,000 cash prizes!',
       icon: MailCheck,
-      badge: 'Step 5 • Final Onboarding',
+      badge: 'Step 5 • Grand Finale',
     },
   ];
 
@@ -82,28 +81,27 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052928] border border-[#C6FF3D]/30 text-[#C6FF3D] text-xs font-mono font-bold mb-4 tracking-wider uppercase">
             <Sparkles className="w-3.5 h-3.5 text-[#C6FF3D]" />
-            <span>OFFICIAL REGISTRATION SYSTEM</span>
+            <span>HOW TO JOIN</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-extrabold text-[#F3F0E8] font-display tracking-tight mb-4">
-            How to Register for Gemini Hackathon 2026
+            Register in 2 Simple Steps
           </h2>
 
           <p className="text-[#F3F0E8]/80 text-base sm:text-lg leading-relaxed">
-            All official event registrations and payments are processed exclusively through{' '}
-            <strong className="text-[#C6FF3D]">UNSTOP</strong>. Follow the 5-step registration journey below to secure your spot.
+            Participation is <strong className="text-[#C6FF3D]">100% Free</strong>. Register on Unstop first, then complete the Google Form.
           </p>
 
           {/* Quick Stats Pill */}
           <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-3 text-xs font-mono">
             <span className="px-3.5 py-1.5 rounded-lg bg-[#052928] border border-[#F3F0E8]/15 text-[#F3F0E8]">
-              Fee: <strong className="text-[#C6FF3D]">₹250 per participant</strong>
+              Fee: <strong className="text-[#C6FF3D]">100% Free (₹0)</strong>
             </span>
             <span className="px-3.5 py-1.5 rounded-lg bg-[#052928] border border-[#F3F0E8]/15 text-[#F3F0E8]">
-              Platform: <strong className="text-[#F3F0E8]">Unstop Official Portal</strong>
+              Platform: <strong className="text-[#F3F0E8]">Unstop</strong>
             </span>
             <span className="px-3.5 py-1.5 rounded-lg bg-[#052928] border border-[#F3F0E8]/15 text-[#F3F0E8]">
               Format: <strong className="text-[#C6FF3D]">100% Online</strong>
@@ -115,18 +113,18 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
         <div className="mb-14 p-6 sm:p-8 rounded-3xl bg-[#052928] border-2 border-[#C6FF3D]/40 shadow-2xl backdrop-blur-sm">
           <div className="text-center max-w-2xl mx-auto mb-6">
             <span className="text-xs font-mono uppercase tracking-widest text-[#C6FF3D] font-bold block mb-1">
-              Direct Access Links
+              Direct Links
             </span>
             <h3 className="text-xl sm:text-2xl font-extrabold text-[#F3F0E8] font-display">
-              Ready to Participate? Complete Both Steps Below
+              Ready to Build? Complete Both Steps Below
             </h3>
             <p className="text-xs sm:text-sm text-[#F3F0E8]/70 mt-1">
-              Register & pay on Unstop first, then submit your details in the official Proton Solutions Google Form.
+              Step 1: Register on Unstop. Step 2: Submit your team details in the Google Form.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl mx-auto">
-            {/* BUTTON 1: REGISTER & PAY ON UNSTOP */}
+            {/* BUTTON 1: REGISTER ON UNSTOP */}
             <a
               href={HACKATHON_CONFIG.placeholders.unstopEventUrl}
               target="_blank"
@@ -134,7 +132,7 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
               className="group relative flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#C6FF3D] text-[#073B3A] font-extrabold text-base sm:text-lg tracking-wide hover:bg-[#b5f524] transition-all duration-200 shadow-neon hover:shadow-neon-lg transform hover:-translate-y-0.5 text-center cursor-pointer"
             >
               <ExternalLink className="w-5 h-5 text-[#073B3A] flex-shrink-0 group-hover:scale-110 transition-transform" />
-              <span>REGISTER & PAY ON UNSTOP</span>
+              <span>1. REGISTER ON UNSTOP (FREE)</span>
             </a>
 
             {/* BUTTON 2: COMPLETE OFFICIAL GOOGLE FORM */}
@@ -145,12 +143,12 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
               className="group relative flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#F3F0E8] text-[#073B3A] font-extrabold text-base sm:text-lg tracking-wide hover:bg-white transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center cursor-pointer"
             >
               <FileText className="w-5 h-5 text-[#073B3A] flex-shrink-0 group-hover:scale-110 transition-transform" />
-              <span>COMPLETE OFFICIAL GOOGLE FORM</span>
+              <span>2. FILL GOOGLE FORM</span>
             </a>
           </div>
 
           <p className="text-center text-[11px] font-mono text-[#F3F0E8]/60 mt-4">
-            Both links open in a new browser tab • ₹250 registration fee is strictly non-refundable
+            Zero fees • Open to solo developers and teams of 1 - 2 members
           </p>
         </div>
 
@@ -190,7 +188,7 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
 
               <div className="pt-4 mt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#F3F0E8]/60 flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#C6FF3D]" />
-                <span>Solo or Teams of up to 4</span>
+                <span>Solo or Duo (1 - 2 Members)</span>
               </div>
             </div>
 
@@ -258,7 +256,7 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
 
               <div className="pt-4 mt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#F3F0E8]/60 flex items-center gap-1.5">
                 <FileCheck className="w-3.5 h-3.5 text-[#C6FF3D]" />
-                <span>Fill after Unstop payment</span>
+                <span>Fill after registering on Unstop</span>
               </div>
             </div>
           </div>
@@ -333,42 +331,30 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
             <div className="space-y-3.5 flex-1 text-sm text-[#F3F0E8]/90 leading-relaxed">
               <div>
                 <span className="text-xs font-mono text-[#C6FF3D] uppercase tracking-wider font-bold block mb-1">
-                  MANDATORY REGISTRATION NOTICE
+                  OFFICIAL GUIDELINES
                 </span>
                 <h4 className="text-xl sm:text-2xl font-extrabold text-[#F3F0E8] font-display">
-                  IMPORTANT REGISTRATION INSTRUCTIONS
+                  Important Registration Notes
                 </h4>
               </div>
 
-              <div className="space-y-2.5 text-xs sm:text-sm text-[#F3F0E8]/85 pt-1">
+              <div className="space-y-2 text-xs sm:text-sm text-[#F3F0E8]/85 pt-1">
                 <p className="flex items-start gap-2">
                   <span className="text-[#C6FF3D] font-bold mt-0.5">•</span>
                   <span>
-                    <strong>All official registrations and payments must be completed through Unstop.</strong> This website does not process payments directly.
+                    <strong>100% Free Registration:</strong> Zero entry fees, zero hidden costs.
                   </span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-[#C6FF3D] font-bold mt-0.5">•</span>
                   <span>
-                    After successfully registering and paying on Unstop, participants must complete the official Google Form to provide additional information required by Proton Solutions.
-                  </span>
-                </p>
-                <p className="flex items-start gap-2">
-                  <span className="text-[#C6FF3D] font-bold mt-0.5">•</span>
-                  <span className="text-[#C6FF3D] font-semibold">
-                    Completing only the Google Form does not constitute successful event registration.
+                    <strong>Complete Both Steps:</strong> Register on Unstop first, then fill out the official Google Form so our team can verify your roster.
                   </span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-[#C6FF3D] font-bold mt-0.5">•</span>
                   <span>
-                    <strong>Registration Fee: ₹250 per participant.</strong>
-                  </span>
-                </p>
-                <p className="flex items-start gap-2">
-                  <span className="text-[#C6FF3D] font-bold mt-0.5">•</span>
-                  <span>
-                    <strong>Registration fees are non-refundable</strong>, subject to applicable law. Terms and Conditions Apply.
+                    <strong>Email Confirmation:</strong> Verified teams will receive challenge briefs and Google Meet links via registered email.
                   </span>
                 </p>
               </div>

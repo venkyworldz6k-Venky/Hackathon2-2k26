@@ -16,20 +16,20 @@ export const SocialGoodTracks: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052928] border border-[#C6FF3D]/30 text-[#C6FF3D] text-xs font-mono font-bold mb-4 tracking-wider uppercase">
             <Bot className="w-3.5 h-3.5" />
-            <span>SPECIAL COLLABORATION CATEGORY</span>
+            <span>CHALLENGE DOMAINS</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black text-[#F3F0E8] font-display tracking-tight mb-4">
-            AI for Social Good
+            AI Engineering Domains
           </h2>
 
           <p className="text-[#F3F0E8]/85 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
-            Harness the power of <strong>Gemini Agentic AI</strong>, autonomous swarms, and intelligent workflows to construct solutions that empower grassroots communities and accelerate sustainable human development.
+            Design and build practical software applications across six high-impact domains using LLMs, Generative AI, and autonomous AI agents.
           </p>
 
-          <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#052928] border border-[#F2B544]/40 text-xs font-mono text-[#F2B544]">
-            <ShieldAlert className="w-4 h-4 flex-shrink-0" />
-            <span>Note: These are suggested challenge themes. Official final problem statements will be released on December 3, 2026.</span>
+          <div className="mt-5 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-[#052928] border border-[#C6FF3D]/40 text-xs font-mono text-[#C6FF3D]">
+            <Workflow className="w-3.5 h-3.5 flex-shrink-0" />
+            <span>Build for 1 or more domains • Multi-agent & tool-calling solutions encouraged</span>
           </div>
         </div>
 

@@ -74,11 +74,11 @@ export const NgoPartner: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 my-6">
             <div className="p-3.5 rounded-2xl bg-[#052928] border border-[#F3F0E8]/10 text-center">
               <span className="block text-xl font-mono font-black text-[#C6FF3D]">142+</span>
-              <span className="text-[10px] font-mono text-[#F3F0E8]/70 uppercase">Gram Panchayats</span>
+              <span className="text-[10px] font-mono text-[#F3F0E8]/70 uppercase">Villages Supported</span>
             </div>
             <div className="p-3.5 rounded-2xl bg-[#052928] border border-[#F3F0E8]/10 text-center">
-              <span className="block text-xl font-mono font-black text-[#F2B544]">Section 80G</span>
-              <span className="text-[10px] font-mono text-[#F3F0E8]/70 uppercase">Tax Certified 12A</span>
+              <span className="block text-xl font-mono font-black text-[#F2B544]">80G & 12A</span>
+              <span className="text-[10px] font-mono text-[#F3F0E8]/70 uppercase">Tax-Exempt Certified</span>
             </div>
             <div className="p-3.5 rounded-2xl bg-[#052928] border border-[#F3F0E8]/10 text-center">
               <span className="block text-xl font-mono font-black text-[#C6FF3D]">4 States</span>
@@ -86,7 +86,7 @@ export const NgoPartner: React.FC = () => {
             </div>
             <div className="p-3.5 rounded-2xl bg-[#052928] border border-[#F3F0E8]/10 text-center">
               <span className="block text-xl font-mono font-black text-[#F2B544]">Section 8</span>
-              <span className="text-[10px] font-mono text-[#F3F0E8]/70 uppercase">Non-Profit Company</span>
+              <span className="text-[10px] font-mono text-[#F3F0E8]/70 uppercase">Registered Non-Profit</span>
             </div>
           </div>
 

@@ -89,13 +89,13 @@ export const SocialImpact: React.FC = () => {
         <div className="rounded-3xl bg-gradient-to-r from-[#073B3A] via-[#176B52] to-[#073B3A] border-2 border-[#C6FF3D]/30 p-8 shadow-neon flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="max-w-2xl">
             <span className="text-xs font-mono uppercase tracking-widest text-[#C6FF3D] font-bold block mb-1">
-              THE INVENTIVE MANDATE
+              OUR MISSION
             </span>
             <h4 className="text-xl sm:text-2xl font-black text-[#F3F0E8] font-display">
-              Autonomous Systems for Grassroots Transformation
+              Build AI That Helps Everyday People
             </h4>
             <p className="text-xs sm:text-sm text-[#F3F0E8]/85 mt-1 leading-relaxed">
-              We urge participants to construct multi-agent swarms that run on modest hardware, function with multilingual audio, and provide practical assistance to real citizens in Indian villages.
+              Design practical Gemini agents that work in local Indian languages and solve real problems in education, farming, and community health.
             </p>
           </div>
 

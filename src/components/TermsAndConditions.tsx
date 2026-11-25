@@ -41,7 +41,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
                 OFFICIAL POLICY: 100% FREE PARTICIPATION
               </strong>
               <span>
-                Participation in the Gemini Agentic Coding Hackathon 2026 is <strong>100% free of charge (₹0 fee)</strong>.
+                Participation in {HACKATHON_CONFIG.eventName} is <strong>100% free of charge (₹0 fee)</strong>.
                 No registration fee, subscription, or payment is required at any stage of the event.
                 Please review all event details before completing your registration.
               </span>
@@ -49,7 +49,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed">
-            By registering for the <strong>Gemini Agentic Coding Hackathon 2026</strong> organized by{' '}
+            By registering for <strong>{HACKATHON_CONFIG.eventName}</strong> organized by{' '}
             <strong>Proton Solutions</strong>, all participants agree to adhere to the following binding rules and
             conditions:
           </p>
