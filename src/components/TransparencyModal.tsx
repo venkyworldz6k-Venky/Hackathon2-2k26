@@ -58,10 +58,10 @@ export const TransparencyModal: React.FC<TransparencyModalProps> = ({ isOpen, on
             <div className="space-y-3 text-xs sm:text-sm text-[#F3F0E8]/90">
               <div className="p-4 rounded-xl bg-[#04201f] border border-[#F3F0E8]/10">
                 <strong className="text-white block font-display text-sm mb-1">
-                  Category A: Hackathon Registration (100% Free Participation)
+                  Category A: Hackathon Entry Ticket (₹350 via KonfHub)
                 </strong>
                 <p className="text-[#F3F0E8]/75 leading-relaxed">
-                  Participation is completely <strong>free of charge (₹0 fee)</strong>, registered via the official Unstop platform. The guaranteed ₹24,000 prize pool and organizing infrastructure are fully sponsored by Proton Solutions.
+                  Unstop is used only for initial registration. All participants must purchase their official <strong>₹350 entry ticket</strong> exclusively through KonfHub to confirm participation. The ₹24,000 prize pool is guaranteed by Proton Solutions.
                 </p>
               </div>
 

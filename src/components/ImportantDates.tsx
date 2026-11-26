@@ -30,7 +30,7 @@ export const ImportantDates: React.FC = () => {
     seconds: 0,
     badgeText: 'REGISTRATION CLOSING COUNTDOWN',
     titleText: 'Registration Closes December 31, 2026',
-    subtitleText: 'Deadline: 12:00 AM Indian Standard Time (IST) • 100% Free Entry on Unstop',
+    subtitleText: 'Deadline: 12:00 AM Indian Standard Time (IST) • Unstop Initial Reg + ₹350 KonfHub Ticket',
   });
 
   useEffect(() => {
@@ -50,7 +50,7 @@ export const ImportantDates: React.FC = () => {
           seconds: Math.floor((diff % (1000 * 60)) / 1000),
           badgeText: 'REGISTRATION LAUNCH COUNTDOWN',
           titleText: 'Registration Opens November 25, 2026',
-          subtitleText: 'Opening 12:00 AM Indian Standard Time (IST) • 100% Free Entry on Unstop',
+          subtitleText: 'Opening 12:00 AM Indian Standard Time (IST) • Unstop Initial Reg + ₹350 KonfHub Ticket',
         });
       } else if (now <= closingDate) {
         setRegStatus('open');
@@ -62,7 +62,7 @@ export const ImportantDates: React.FC = () => {
           seconds: Math.floor((diff % (1000 * 60)) / 1000),
           badgeText: 'REGISTRATION IS CURRENTLY LIVE',
           titleText: 'Registration Closes December 31, 2026',
-          subtitleText: 'Deadline: 12:00 AM Indian Standard Time (IST) • 100% Free Entry on Unstop',
+          subtitleText: 'Deadline: 12:00 AM Indian Standard Time (IST) • Unstop Initial Reg + ₹350 KonfHub Ticket',
         });
       } else {
         setRegStatus('closed');
@@ -531,7 +531,7 @@ export const ImportantDates: React.FC = () => {
                 All rounds, submissions, and shortlist announcements will be processed on the Unstop platform and communicated via official email and the Proton Solutions WhatsApp Channel.
               </p>
               <p className="text-[#F3F0E8]/70 text-xs font-mono">
-                Registration Fee: <strong>100% Free (₹0 Entry Fee)</strong> • Team Size: <strong>1 - 2 Members</strong> • Category: <strong>AI Engineering</strong>.
+                Entry Fee: <strong>₹350 via KonfHub</strong> (after Unstop registration) • Team Size: <strong>1 - 2 Members</strong> • Category: <strong>AI Engineering</strong>.
               </p>
             </div>
           </div>

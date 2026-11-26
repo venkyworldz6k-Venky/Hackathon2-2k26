@@ -2,11 +2,6 @@ import React from 'react';
 import { 
   HeartHandshake, 
   ExternalLink, 
-  Compass, 
-  Sparkles, 
-  Mail, 
-  Phone, 
-  MapPin, 
   CheckCircle2 
 } from 'lucide-react';
 import { HACKATHON_CONFIG } from '../config/hackathon';
@@ -115,18 +110,9 @@ export const NgoPartner: React.FC = () => {
             ))}
           </div>
 
-          {/* Compact Contact Strip */}
+          {/* Compact Partner Link Strip */}
           <div className="p-4 rounded-xl bg-[#04201f] border border-[#F2B544]/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono text-[#F3F0E8]/75">
-            <div className="flex flex-wrap items-center gap-4">
-              <span className="flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-[#F2B544]" />
-                <span>{ngoPartner.registeredOffice}</span>
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Mail className="w-3.5 h-3.5 text-[#C6FF3D]" />
-                <span>{ngoPartner.contactEmail}</span>
-              </span>
-            </div>
+            <span>{ngoPartner.areasOfOperation}</span>
             <a
               href={ngoPartner.website}
               target="_blank"

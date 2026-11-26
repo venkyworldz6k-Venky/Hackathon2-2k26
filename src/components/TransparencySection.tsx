@@ -17,7 +17,7 @@ export const TransparencySection: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#073B3A] border border-[#F2B544]/40 text-[#F2B544] text-xs font-mono font-bold mb-4 tracking-wider uppercase">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>100% FREE & TRANSPARENT</span>
+            <span>TRANSPARENT TICKETING</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black text-[#F3F0E8] font-display tracking-tight mb-4">
@@ -41,14 +41,14 @@ export const TransparencySection: React.FC = () => {
                 CATEGORY A
               </span>
               <h3 className="text-xl font-bold text-[#F3F0E8] font-display mb-3">
-                100% Free Entry
+                Official KonfHub Ticketing
               </h3>
               <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed mb-4">
-                <strong>₹0 registration fee</strong> on Unstop. The ₹24,000 cash prizes and event infrastructure are 100% sponsored by Proton Solutions.
+                Initial registration is on Unstop, followed by a <strong>₹350 entry ticket</strong> processed exclusively via KonfHub.
               </p>
             </div>
             <div className="pt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#C6FF3D]">
-              • Zero Fees or Hidden Costs
+              • All Payments via KonfHub Only
             </div>
           </div>
 

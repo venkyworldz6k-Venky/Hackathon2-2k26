@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Trophy, Sparkles, Globe, ShieldAlert, Cpu, HeartHandshake, Users, Sparkle, ExternalLink } from 'lucide-react';
+import { ArrowRight, Trophy, Sparkles, Globe, ShieldAlert, Cpu, HeartHandshake, Users, Sparkle, ExternalLink, Ticket } from 'lucide-react';
 import { HACKATHON_CONFIG } from '../config/hackathon';
 
 interface HeroProps {
@@ -101,7 +101,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
           </span>
         </div>
 
-        {/* Dual Organizer & Partner Header Badges */}
+        {/* Organizer & Partner Header Badges */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-6">
           <div className="px-3.5 py-1 rounded-xl bg-[#073B3A] border border-[#F3F0E8]/20 flex items-center gap-2 text-xs font-mono text-[#F3F0E8]">
             <span className="w-2 h-2 rounded-full bg-[#C6FF3D]" />
@@ -111,6 +111,11 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
           <div className="px-3.5 py-1 rounded-xl bg-[#073B3A] border border-[#F2B544]/30 flex items-center gap-2 text-xs font-mono text-[#F3F0E8]">
             <HeartHandshake className="w-3.5 h-3.5 text-[#F2B544]" />
             <span>NGO Partner: <strong className="text-[#F2B544]">{HACKATHON_CONFIG.ngoPartner.name}</strong></span>
+          </div>
+          <span className="text-[#C6FF3D] text-xs font-mono font-bold">✕</span>
+          <div className="px-3.5 py-1 rounded-xl bg-[#073B3A] border border-[#C6FF3D]/35 flex items-center gap-2 text-xs font-mono text-[#F3F0E8]">
+            <Ticket className="w-3.5 h-3.5 text-[#C6FF3D]" />
+            <span>Ticket Partner: <strong className="text-[#C6FF3D]">{HACKATHON_CONFIG.ticketPartner.name}</strong></span>
           </div>
         </div>
 
@@ -176,7 +181,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
             </div>
             <div className="text-left">
               <span className="text-[10px] font-mono uppercase text-[#FFD700] block leading-tight font-semibold">Prize Pool</span>
-              <span className="text-xs sm:text-sm font-bold text-[#F3F0E8] font-mono">₹24,000 (Free)</span>
+              <span className="text-xs sm:text-sm font-bold text-[#F3F0E8] font-mono">₹24,000</span>
             </div>
           </div>
         </div>
@@ -193,7 +198,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
             className="w-full sm:w-auto px-8 py-4 text-base sm:text-lg font-extrabold rounded-xl bg-[#C6FF3D] text-[#073B3A] hover:bg-[#b5f524] transition-all duration-200 shadow-neon hover:shadow-neon-lg flex items-center justify-center gap-3 transform hover:-translate-y-0.5 cursor-pointer"
           >
             <Sparkles className="w-5 h-5 text-[#073B3A]" />
-            <span>Register for Free on Unstop</span>
+            <span>Register on Unstop</span>
             <ArrowRight className="w-5 h-5 text-[#073B3A]" />
           </a>
 
@@ -244,7 +249,7 @@ export const Hero: React.FC<HeroProps> = ({ onRegisterClick, onExploreClick }) =
         {/* Notice line */}
         <div className="mt-8 inline-flex items-center gap-2 text-xs text-[#F3F0E8]/70 font-mono">
           <ShieldAlert className="w-3.5 h-3.5 text-[#C6FF3D]" />
-          <span>Registrations Open: Nov 25 – Dec 31, 2026 • 100% Free Entry • Team Size: 1 - 2 Members</span>
+          <span>Registrations Open: Nov 25 – Dec 31, 2026 • Entry Fee: ₹350 (KonfHub) • Team Size: 1 - 2 Members</span>
         </div>
       </div>
     </section>

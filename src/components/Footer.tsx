@@ -63,11 +63,19 @@ export const Footer: React.FC<FooterProps> = ({
                   <span className="text-[#F2B544]/80 text-[11px] font-mono">Official Collaboration Partner • Community Advisory</span>
                 </div>
               </div>
+
+              <div className="flex items-start gap-2 pt-2 border-t border-[#F3F0E8]/10">
+                <span className="text-[#C6FF3D] font-bold">•</span>
+                <div>
+                  <strong className="text-white block font-display">{HACKATHON_CONFIG.ticketPartner.name}</strong>
+                  <span className="text-[#C6FF3D]/80 text-[11px] font-mono">Official Ticket Partner • Paid Entry &amp; Ticketing</span>
+                </div>
+              </div>
             </div>
 
             <div className="text-xs font-mono text-[#F3F0E8]/60 space-y-1">
               <p>Total Prize Pool: <span className="text-[#FFD700] font-bold">₹24,000</span></p>
-              <p>Registration Fee: <span className="text-[#C6FF3D] font-bold">100% Free (₹0 Entry Fee)</span></p>
+              <p>Entry Fee: <span className="text-[#C6FF3D] font-bold">₹350 via KonfHub</span></p>
             </div>
           </div>
 
@@ -146,7 +154,17 @@ export const Footer: React.FC<FooterProps> = ({
                   rel="noopener noreferrer"
                   className="hover:text-[#C6FF3D] transition-colors flex items-center gap-1.5"
                 >
-                  Unstop Registration Portal
+                  Unstop (Initial Registration)
+                </a>
+              </li>
+              <li>
+                <a
+                  href={HACKATHON_CONFIG.placeholders.konfhubTicketUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#C6FF3D] transition-colors flex items-center gap-1.5"
+                >
+                  KonfHub (Get Entry Ticket)
                 </a>
               </li>
               <li>
@@ -195,10 +213,10 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <div className="p-3.5 rounded-xl bg-[#052928] border border-[#F3F0E8]/10 text-xs text-[#F3F0E8]/70 leading-relaxed space-y-2">
               <p>
-                Participation in {HACKATHON_CONFIG.eventName} is <strong>100% free of charge (₹0 fee)</strong>.
+                Participation in {HACKATHON_CONFIG.eventName} requires initial registration on Unstop and a <strong>₹350 entry ticket via KonfHub</strong>.
               </p>
               <p className="text-[11px] text-[#F3F0E8]/60">
-                Registration is open to all developers and students via Unstop with zero entry cost. No payment or banking information is collected.
+                All payments are processed exclusively through KonfHub. Confirmation and further-round details are sent via official email.
               </p>
               <button
                 onClick={onOpenTerms}

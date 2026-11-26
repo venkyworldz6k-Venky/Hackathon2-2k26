@@ -94,6 +94,15 @@ export const HACKATHON_CONFIG = {
     website: "https://protonsolutions.tech"
   },
 
+  ticketPartner: {
+    name: "KonfHub",
+    role: "Official Ticket Partner",
+    tagline: "Official Ticketing & Payment Infrastructure",
+    description: "KonfHub is our official Ticket Partner for AI CodeStorm 2026, powering secure entry ticket booking, payment processing, and instant email ticket confirmations.",
+    website: "https://konfhub.com",
+    ticketUrl: "https://konfhub.com/ai-codestorm-2026"
+  },
+
   ngoPartner: {
     name: "ROOTS & RISE Foundation",
     shortName: "ROOTS & RISE",
@@ -281,19 +290,19 @@ export const HACKATHON_CONFIG = {
   // Transparency & Financial Governance
   transparency: {
     sectionTitle: "Your Participation. A Bigger Purpose.",
-    sectionSubtitle: "100% Free • Open & Transparent",
-    summary: "Participation in AI CodeStorm 2026 is 100% free with ₹0 registration fee. The entire ₹24,000 prize pool and technical platform are fully sponsored by Proton Solutions.",
-    disclaimer: "Official Policy: Joining this hackathon is 100% free of charge. No registration fee or payment is ever collected from participants.",
+    sectionSubtitle: "Two-Stage Registration • Transparent Ticketing",
+    summary: "Initial registration is hosted on Unstop, followed by official ₹350 paid entry ticket confirmation exclusively via KonfHub. The ₹24,000 prize pool and technical platform are managed transparently by Proton Solutions.",
+    disclaimer: "Official Policy: Unstop is used only for initial registration. Participation is confirmed only after purchasing your official ₹350 entry ticket through KonfHub.",
     financialBreakdown: [
       {
-        item: "Registration Fee",
-        share: "₹0 (100% Free)",
-        description: "Open to all students and developers with zero entry cost."
+        item: "Stage 1: Unstop",
+        share: "Initial Registration",
+        description: "Register your profile and team details on Unstop to start."
       },
       {
-        item: "Hosting Platform",
-        share: "Free on Unstop",
-        description: "Event registration and submission hosted freely on Unstop."
+        item: "Stage 2: KonfHub Ticket",
+        share: "₹350 Entry Fee",
+        description: "Complete official paid entry ticket purchase exclusively on KonfHub."
       },
       {
         item: "Guaranteed Cash Prizes",
@@ -301,9 +310,9 @@ export const HACKATHON_CONFIG = {
         description: "100% funded by Proton Solutions: 🥇 ₹10k, 🥈 ₹8k, 🥉 ₹6k."
       },
       {
-        item: "Infrastructure & Compute",
-        share: "Proton Solutions Sponsored",
-        description: "Cloud servers, evaluation tools, and Meet sessions fully covered."
+        item: "Confirmation & Access",
+        share: "Email Verified",
+        description: "KonfHub issues ticket confirmation; further-round details arrive via email."
       },
       {
         item: "NGO Social Partnership",
@@ -319,34 +328,54 @@ export const HACKATHON_CONFIG = {
   },
 
   // Registration & Fee Details
-  registrationFee: 0,
-  feeText: "100% Free (₹0)",
+  registrationFee: 350,
+  feeText: "₹350",
   currency: "INR",
   currencySymbol: "₹",
   totalPrizePool: "₹24,000",
   totalPrizeNumber: 24000,
   
-  // Free registration policy notice
-  refundPolicyText: "Registration is 100% free of charge. No entry fees or payments are collected from participants. Terms and Conditions Apply.",
-  refundNoticeHeadline: "100% FREE PARTICIPATION: Open to all innovators with zero registration fee.",
+  // Registration policy notice
+  refundPolicyText: "Unstop registration is only the initial stage. Participation is confirmed exclusively after purchasing the official ₹350 entry ticket on KonfHub. Terms and Conditions Apply.",
+  refundNoticeHeadline: "TWO-STAGE ENTRY: Register on Unstop, then purchase your ₹350 entry ticket on KonfHub.",
 
   // Official Channel & Registration Links
   placeholders: {
     unstopEventUrl: "https://unstop.com/hackathons/ai-codestorm-2026-proton-solutions",
+    konfhubTicketUrl: "https://konfhub.com/ai-codestorm-2026",
     googleFormUrl: "https://forms.gle/YKmaTnHpTi65envRA",
     whatsappChannelUrl: "https://whatsapp.com/channel/0029VbDpw0m1iUxbAtgMO71Z",
     discordServerUrl: "#",
     githubOrgUrl: "https://github.com/venkyworldz6k-Venky/Hackathon-2k26",
   },
 
-  // Registration Information
+  // Registration & Ticketing Information
   payment: {
-    platform: "Unstop",
-    registrationFee: 0,
-    feeText: "100% Free",
+    initialPlatform: "Unstop",
+    platform: "KonfHub",
+    registrationFee: 350,
+    feeText: "₹350",
     currency: "INR",
     currencySymbol: "₹",
-    policy: "Participation is 100% free of charge. No payment or financial information is required.",
+    tickets: [
+      {
+        id: "individual",
+        title: "Individual Entry Ticket",
+        subtitle: "Solo Participant (1 Member)",
+        price: 350,
+        priceText: "₹350",
+        description: "Official entry ticket for solo developers participating individually.",
+      },
+      {
+        id: "team",
+        title: "Team Entry Ticket",
+        subtitle: "Team Participants (1 - 2 Members)",
+        price: 350,
+        priceText: "₹350",
+        description: "Official entry ticket for teams collaborating on a single project submission.",
+      },
+    ],
+    policy: "All payments are processed exclusively through KonfHub. Participation will be considered confirmed only after successful ticket purchase.",
   },
 
   // Official Four-Stage Event Timeline (Indian Standard Time - IST)
@@ -511,9 +540,9 @@ export const HACKATHON_CONFIG = {
 
   // Terms and Conditions
   termsAndConditions: [
-    "Registration is 100% free of charge for all participants on Unstop.",
+    "Registration follows a two-stage process: initial registration on Unstop followed by official ₹350 ticket purchase on KonfHub.",
     "Team size: 1 - 2 Members (participate individually or in pairs).",
-    "No entry fee, payment, or banking information is ever required.",
+    "All payments are processed exclusively through KonfHub; participation is confirmed only after successful ticket purchase.",
     "Open to Undergraduates, Postgraduates, Engineering Students, Freshers, and Professionals.",
     "All project code must be original and built during the hackathon rounds.",
     "Submissions must be made on Unstop before the deadline for each round.",
@@ -537,8 +566,8 @@ export const HACKATHON_CONFIG = {
     },
     {
       id: "faq-3",
-      question: "Is there any registration fee?",
-      answer: "No! Registration is 100% Free. There are zero fees or charges on Unstop or any other portal.",
+      question: "How do registration and payment work?",
+      answer: "It is a two-stage process: First, complete initial registration on Unstop. Next, purchase your official ₹350 entry ticket exclusively through KonfHub to confirm participation.",
       category: "General"
     },
     {

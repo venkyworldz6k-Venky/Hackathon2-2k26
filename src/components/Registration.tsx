@@ -5,12 +5,12 @@ import {
   AlertCircle,
   CheckCircle2,
   Users,
-  CreditCard,
-  FileCheck,
+  Ticket,
   ShieldCheck,
   MailCheck,
   Sparkles,
-  Info
+  Info,
+  User
 } from 'lucide-react';
 import { HACKATHON_CONFIG } from '../config/hackathon';
 
@@ -19,57 +19,39 @@ interface RegistrationProps {
 }
 
 export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
-  const steps = [
+  const { placeholders, payment } = HACKATHON_CONFIG;
+
+  const entrySteps = [
     {
       stepNumber: '01',
-      title: 'REGISTER ON UNSTOP',
-      subtitle: '100% Free Entry',
+      title: 'Register for the Hackathon through Unstop',
+      badge: 'Stage 1 • Initial Registration',
+      roleSummary: 'Unstop = Initial Registration',
       description:
-        'Join the hackathon on Unstop with zero registration fee. You can participate solo or as a duo (1 - 2 members).',
+        'Start by completing your initial registration on Unstop. Unstop is used only for initial registration and team profile setup (1 - 2 members).',
       icon: Users,
-      badge: 'Step 1 • Free Entry',
+      footerText: 'Initial Registration Only',
     },
     {
       stepNumber: '02',
-      title: 'SUBMIT GOOGLE FORM',
-      subtitle: 'Team & Contact Info',
+      title: 'Purchase the Official Entry Ticket through KonfHub',
+      badge: 'Stage 2 • Official Paid Ticket',
+      roleSummary: 'KonfHub = Official Paid Ticket Registration',
       description:
-        'Fill out our quick official Google Form with your team roster, contact details, and tech experience.',
-      icon: FileText,
-      badge: 'Step 2 • Quick Form',
-      detailsList: [
-        'Full name, email, and phone',
-        'College / organization name',
-        'Team members (1 - 2 members)',
-        'GitHub and technical background',
-      ],
+        'After Unstop registration, purchase your official ₹350 entry ticket exclusively through KonfHub, our official ticketing and payment partner.',
+      icon: Ticket,
+      footerText: 'All Payments via KonfHub Only',
+      highlighted: true,
     },
     {
       stepNumber: '03',
-      title: 'ROUND 1: IDEA SUBMISSION',
-      subtitle: 'Jan 02 – Jan 07, 2027',
+      title: 'Receive Ticket Confirmation Email & Instructions',
+      badge: 'Stage 3 • Email Confirmation',
+      roleSummary: 'Email = Ticket Confirmation & Further Rounds',
       description:
-        'Submit your proposed AI idea, problem selection, and implementation approach directly via Unstop.',
-      icon: ShieldCheck,
-      badge: 'Step 3 • Round 1',
-    },
-    {
-      stepNumber: '04',
-      title: 'ROUNDS 2 & 3: PROTOTYPE & BUILD',
-      subtitle: 'Jan 08 – Jan 25, 2027',
-      description:
-        'Transform ideas into functional prototypes in Round 2 and develop full production solutions in Round 3.',
-      icon: FileCheck,
-      badge: 'Step 4 • Dev Phase',
-    },
-    {
-      stepNumber: '05',
-      title: 'ROUND 4: GRAND FINALE',
-      subtitle: 'Jan 30 – Jan 31, 2027',
-      description:
-        'Finalists present live demonstrations before judges and compete for ₹24,000 cash prizes!',
+        'Once payment succeeds on KonfHub, you receive an official ticket confirmation email. Further-round instructions will be communicated via official email.',
       icon: MailCheck,
-      badge: 'Step 5 • Grand Finale',
+      footerText: 'Confirmed Only After Ticket Purchase',
     },
   ];
 
@@ -81,260 +63,234 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#052928] border border-[#C6FF3D]/30 text-[#C6FF3D] text-xs font-mono font-bold mb-4 tracking-wider uppercase">
             <Sparkles className="w-3.5 h-3.5 text-[#C6FF3D]" />
-            <span>HOW TO JOIN</span>
+            <span>TWO-STAGE REGISTRATION</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-extrabold text-[#F3F0E8] font-display tracking-tight mb-4">
-            Register in 2 Simple Steps
+            How to Secure Your Entry
           </h2>
 
           <p className="text-[#F3F0E8]/80 text-base sm:text-lg leading-relaxed">
-            Participation is <strong className="text-[#C6FF3D]">100% Free</strong>. Register on Unstop first, then complete the Google Form.
+            Follow our two-stage registration and payment workflow: register on{' '}
+            <strong className="text-[#C6FF3D]">Unstop</strong> first, then purchase your{' '}
+            <strong className="text-[#C6FF3D]">{payment.feeText}</strong> official entry ticket on{' '}
+            <strong className="text-[#C6FF3D]">KonfHub</strong>.
           </p>
 
-          {/* Quick Stats Pill */}
-          <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-3 text-xs font-mono">
+          {/* Quick Workflow Summary Pills */}
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5 text-xs font-mono">
             <span className="px-3.5 py-1.5 rounded-lg bg-[#052928] border border-[#F3F0E8]/15 text-[#F3F0E8]">
-              Fee: <strong className="text-[#C6FF3D]">100% Free (₹0)</strong>
+              <strong className="text-[#C6FF3D]">Unstop</strong> = Initial Registration
             </span>
             <span className="px-3.5 py-1.5 rounded-lg bg-[#052928] border border-[#F3F0E8]/15 text-[#F3F0E8]">
-              Platform: <strong className="text-[#F3F0E8]">Unstop</strong>
+              <strong className="text-[#C6FF3D]">KonfHub</strong> = Official Paid Ticket ({payment.feeText})
             </span>
             <span className="px-3.5 py-1.5 rounded-lg bg-[#052928] border border-[#F3F0E8]/15 text-[#F3F0E8]">
-              Format: <strong className="text-[#C6FF3D]">100% Online</strong>
+              <strong className="text-[#C6FF3D]">Email</strong> = Confirmation &amp; Further Rounds
             </span>
           </div>
         </div>
 
-        {/* Action Buttons Box (Top Highlight) */}
+        {/* Important Registration Notice (Required Exact Message) */}
+        <div className="mb-12 rounded-2xl bg-[#052928] border-2 border-[#F2B544] p-6 sm:p-7 shadow-xl">
+          <div className="flex items-start gap-4">
+            <div className="w-11 h-11 rounded-xl bg-[#F2B544]/15 border border-[#F2B544]/40 flex items-center justify-center text-[#F2B544] flex-shrink-0 mt-0.5">
+              <AlertCircle className="w-6 h-6" />
+            </div>
+            <div>
+              <span className="text-xs font-mono uppercase tracking-wider text-[#F2B544] font-bold block mb-1">
+                Important Registration Notice
+              </span>
+              <p className="text-sm sm:text-base text-[#F3F0E8] font-medium leading-relaxed">
+                Important: Unstop registration is only the initial registration stage. To confirm your participation, you must complete the official paid entry ticket registration through KonfHub. Your participation will be considered confirmed only after successful ticket purchase.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Action Buttons Box: Unstop + KonfHub */}
         <div className="mb-14 p-6 sm:p-8 rounded-3xl bg-[#052928] border-2 border-[#C6FF3D]/40 shadow-2xl backdrop-blur-sm">
           <div className="text-center max-w-2xl mx-auto mb-6">
             <span className="text-xs font-mono uppercase tracking-widest text-[#C6FF3D] font-bold block mb-1">
-              Direct Links
+              Official Registration &amp; Ticketing
             </span>
             <h3 className="text-xl sm:text-2xl font-extrabold text-[#F3F0E8] font-display">
-              Ready to Build? Complete Both Steps Below
+              Complete Both Stages to Confirm Entry
             </h3>
             <p className="text-xs sm:text-sm text-[#F3F0E8]/70 mt-1">
-              Step 1: Register on Unstop. Step 2: Submit your team details in the Google Form.
+              Stage 1: Initial registration on Unstop. Stage 2: Pay {payment.feeText} entry fee exclusively on KonfHub.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto mb-6">
             {/* BUTTON 1: REGISTER ON UNSTOP */}
             <a
-              href={HACKATHON_CONFIG.placeholders.unstopEventUrl}
+              href={placeholders.unstopEventUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#C6FF3D] text-[#073B3A] font-extrabold text-base sm:text-lg tracking-wide hover:bg-[#b5f524] transition-all duration-200 shadow-neon hover:shadow-neon-lg transform hover:-translate-y-0.5 text-center cursor-pointer"
+              className="group flex flex-col items-center justify-center gap-1.5 px-7 py-5 rounded-2xl bg-[#F3F0E8] text-[#073B3A] font-extrabold hover:bg-white transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center cursor-pointer"
             >
-              <ExternalLink className="w-5 h-5 text-[#073B3A] flex-shrink-0 group-hover:scale-110 transition-transform" />
-              <span>1. REGISTER ON UNSTOP (FREE)</span>
+              <span className="flex items-center gap-2.5 text-base sm:text-lg tracking-wide">
+                <ExternalLink className="w-5 h-5 text-[#073B3A] flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span>Register on Unstop</span>
+              </span>
+              <span className="text-[11px] font-mono font-semibold text-[#073B3A]/75">
+                Stage 1 • Initial Registration Only
+              </span>
             </a>
 
-            {/* BUTTON 2: COMPLETE OFFICIAL GOOGLE FORM */}
+            {/* BUTTON 2: GET YOUR ENTRY TICKET (KONFHUB) */}
             <a
-              href={HACKATHON_CONFIG.placeholders.googleFormUrl}
+              href={placeholders.konfhubTicketUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#F3F0E8] text-[#073B3A] font-extrabold text-base sm:text-lg tracking-wide hover:bg-white transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center cursor-pointer"
+              className="group flex flex-col items-center justify-center gap-1.5 px-7 py-5 rounded-2xl bg-[#C6FF3D] text-[#073B3A] font-extrabold hover:bg-[#b5f524] transition-all duration-200 shadow-neon hover:shadow-neon-lg transform hover:-translate-y-0.5 text-center cursor-pointer"
             >
-              <FileText className="w-5 h-5 text-[#073B3A] flex-shrink-0 group-hover:scale-110 transition-transform" />
-              <span>2. FILL GOOGLE FORM</span>
+              <span className="flex items-center gap-2.5 text-base sm:text-lg tracking-wide">
+                <Ticket className="w-5 h-5 text-[#073B3A] flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span>Get Your Entry Ticket</span>
+              </span>
+              <span className="text-[11px] font-mono font-semibold text-[#073B3A]/85">
+                Stage 2 • Official KonfHub Ticket ({payment.feeText})
+              </span>
             </a>
           </div>
 
-          <p className="text-center text-[11px] font-mono text-[#F3F0E8]/60 mt-4">
-            Zero fees • Open to solo developers and teams of 1 - 2 members
-          </p>
+          {/* Separate Ticket Options for Individual & Team Participants */}
+          <div className="max-w-4xl mx-auto pt-6 border-t border-[#F3F0E8]/10">
+            <p className="text-center text-xs font-mono uppercase tracking-widest text-[#C6FF3D] font-bold mb-4">
+              Available KonfHub Ticket Options
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {payment.tickets.map((ticket) => (
+                <div
+                  key={ticket.id}
+                  className="p-5 rounded-2xl bg-[#073B3A] border border-[#C6FF3D]/30 hover:border-[#C6FF3D] transition-all flex flex-col justify-between gap-3"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-xl bg-[#052928] border border-[#C6FF3D]/30 flex items-center justify-center text-[#C6FF3D] flex-shrink-0">
+                        {ticket.id === 'individual' ? <User className="w-5 h-5" /> : <Users className="w-5 h-5" />}
+                      </div>
+                      <div>
+                        <h4 className="text-base font-bold text-[#F3F0E8] font-display">{ticket.title}</h4>
+                        <span className="text-xs font-mono text-[#C6FF3D]">{ticket.subtitle}</span>
+                      </div>
+                    </div>
+                    <span className="text-xl font-mono font-black text-[#C6FF3D] flex-shrink-0">
+                      {ticket.priceText}
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#F3F0E8]/75 leading-relaxed">{ticket.description}</p>
+                  <a
+                    href={placeholders.konfhubTicketUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-[#052928] border border-[#C6FF3D]/40 text-[#C6FF3D] text-xs font-bold hover:bg-[#C6FF3D] hover:text-[#073B3A] transition-colors"
+                  >
+                    <Ticket className="w-3.5 h-3.5" />
+                    <span>Get Your Entry Ticket ({ticket.priceText})</span>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Optional Secondary Google Form & Official Ticket Partner Banner */}
+          <div className="mt-6 pt-5 border-t border-[#F3F0E8]/10 flex flex-col sm:flex-row items-center justify-between gap-3 max-w-4xl mx-auto text-xs text-[#F3F0E8]/70">
+            <div className="flex items-center gap-2 font-mono">
+              <span className="px-2.5 py-1 rounded-md bg-[#C6FF3D]/15 border border-[#C6FF3D]/30 text-[#C6FF3D] font-bold uppercase text-[10px]">
+                Official Ticket Partner
+              </span>
+              <span>
+                <strong className="text-white">{HACKATHON_CONFIG.ticketPartner.name}</strong> — All payments processed exclusively via KonfHub.
+              </span>
+            </div>
+            <a
+              href={placeholders.googleFormUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[#C6FF3D] hover:underline font-mono font-semibold"
+            >
+              <FileText className="w-3.5 h-3.5" />
+              <span>Optional: Submit Team Info Form</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          </div>
         </div>
 
-        {/* 5-Step Registration Process Cards */}
+        {/* 3-Step Registration Workflow Cards ("How to Secure Your Entry") */}
         <div className="mb-14">
           <div className="text-center mb-8">
             <span className="text-xs font-mono uppercase tracking-widest text-[#C6FF3D] font-bold block mb-1">
               Step-by-Step Guide
             </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-[#F3F0E8] font-display">
-              5 Simple Steps to Join the Challenge
+              3 Steps to Confirm Your Participation
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            {/* Step 1 */}
-            <div className="p-6 sm:p-7 rounded-2xl bg-[#052928] border border-[#F3F0E8]/15 hover:border-[#C6FF3D]/50 transition-all flex flex-col justify-between group">
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-mono font-bold text-[#073B3A] bg-[#C6FF3D] px-2.5 py-1 rounded-md">
-                    STEP {steps[0].stepNumber}
-                  </span>
-                  <div className="w-10 h-10 rounded-xl bg-[#073B3A] border border-[#C6FF3D]/30 flex items-center justify-center text-[#C6FF3D] group-hover:scale-110 transition-transform">
-                    <Users className="w-5 h-5" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {entrySteps.map((step) => {
+              const Icon = step.icon;
+              return (
+                <div
+                  key={step.stepNumber}
+                  className={`p-6 sm:p-7 rounded-2xl bg-[#052928] border transition-all flex flex-col justify-between group ${
+                    step.highlighted
+                      ? 'border-[#C6FF3D]/50 hover:border-[#C6FF3D] shadow-teal-glow'
+                      : 'border-[#F3F0E8]/15 hover:border-[#C6FF3D]/50'
+                  }`}
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-xs font-mono font-bold text-[#073B3A] bg-[#C6FF3D] px-2.5 py-1 rounded-md">
+                        STEP {step.stepNumber}
+                      </span>
+                      <div className="w-10 h-10 rounded-xl bg-[#073B3A] border border-[#C6FF3D]/30 flex items-center justify-center text-[#C6FF3D] group-hover:scale-110 transition-transform">
+                        <Icon className="w-5 h-5" />
+                      </div>
+                    </div>
+
+                    <p className="text-[11px] font-mono text-[#C6FF3D] uppercase font-bold mb-1">
+                      {step.roleSummary}
+                    </p>
+                    <h4 className="text-lg font-bold text-[#F3F0E8] font-display mb-2 group-hover:text-[#C6FF3D] transition-colors">
+                      {step.title}
+                    </h4>
+
+                    <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#F3F0E8]/70 flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#C6FF3D] flex-shrink-0" />
+                    <span>{step.footerText}</span>
                   </div>
                 </div>
-
-                <h4 className="text-lg font-bold text-[#F3F0E8] font-display mb-1 group-hover:text-[#C6FF3D] transition-colors">
-                  {steps[0].title}
-                </h4>
-                <p className="text-xs font-mono text-[#C6FF3D] mb-3">{steps[0].subtitle}</p>
-
-                <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed">
-                  {steps[0].description}
-                </p>
-              </div>
-
-              <div className="pt-4 mt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#F3F0E8]/60 flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#C6FF3D]" />
-                <span>Solo or Duo (1 - 2 Members)</span>
-              </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="p-6 sm:p-7 rounded-2xl bg-[#052928] border border-[#C6FF3D]/40 hover:border-[#C6FF3D] transition-all flex flex-col justify-between group shadow-teal-glow">
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-mono font-bold text-[#073B3A] bg-[#C6FF3D] px-2.5 py-1 rounded-md">
-                    STEP {steps[1].stepNumber}
-                  </span>
-                  <div className="w-10 h-10 rounded-xl bg-[#073B3A] border border-[#C6FF3D]/40 flex items-center justify-center text-[#C6FF3D] group-hover:scale-110 transition-transform">
-                    <CreditCard className="w-5 h-5" />
-                  </div>
-                </div>
-
-                <h4 className="text-lg font-bold text-[#F3F0E8] font-display mb-1 group-hover:text-[#C6FF3D] transition-colors">
-                  {steps[1].title}
-                </h4>
-                <p className="text-xs font-mono text-[#C6FF3D] mb-3">{steps[1].subtitle}</p>
-
-                <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed">
-                  {steps[1].description}
-                </p>
-              </div>
-
-              <div className="pt-4 mt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#C6FF3D] flex items-center gap-1.5">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#C6FF3D]" />
-                <span>Processed 100% via Unstop</span>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="p-6 sm:p-7 rounded-2xl bg-[#052928] border border-[#F3F0E8]/15 hover:border-[#C6FF3D]/50 transition-all flex flex-col justify-between group md:row-span-1">
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-mono font-bold text-[#073B3A] bg-[#C6FF3D] px-2.5 py-1 rounded-md">
-                    STEP {steps[2].stepNumber}
-                  </span>
-                  <div className="w-10 h-10 rounded-xl bg-[#073B3A] border border-[#C6FF3D]/30 flex items-center justify-center text-[#C6FF3D] group-hover:scale-110 transition-transform">
-                    <FileText className="w-5 h-5" />
-                  </div>
-                </div>
-
-                <h4 className="text-lg font-bold text-[#F3F0E8] font-display mb-1 group-hover:text-[#C6FF3D] transition-colors">
-                  {steps[2].title}
-                </h4>
-                <p className="text-xs font-mono text-[#C6FF3D] mb-3">{steps[2].subtitle}</p>
-
-                <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed mb-3">
-                  {steps[2].description}
-                </p>
-
-                <div className="bg-[#073B3A] p-3 rounded-xl border border-[#F3F0E8]/10 text-xs text-[#F3F0E8]/80 space-y-1.5">
-                  <p className="font-mono text-[11px] text-[#C6FF3D] uppercase font-bold">Information Collected:</p>
-                  <ul className="space-y-1 text-[11px] leading-snug">
-                    {steps[2].detailsList?.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-1.5">
-                        <span className="text-[#C6FF3D]">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="pt-4 mt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#F3F0E8]/60 flex items-center gap-1.5">
-                <FileCheck className="w-3.5 h-3.5 text-[#C6FF3D]" />
-                <span>Fill after registering on Unstop</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Steps 4 and 5 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Step 4 */}
-            <div className="p-6 sm:p-7 rounded-2xl bg-[#052928] border border-[#F3F0E8]/15 hover:border-[#C6FF3D]/50 transition-all flex flex-col justify-between group">
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-mono font-bold text-[#073B3A] bg-[#C6FF3D] px-2.5 py-1 rounded-md">
-                    STEP {steps[3].stepNumber}
-                  </span>
-                  <div className="w-10 h-10 rounded-xl bg-[#073B3A] border border-[#C6FF3D]/30 flex items-center justify-center text-[#C6FF3D] group-hover:scale-110 transition-transform">
-                    <ShieldCheck className="w-5 h-5" />
-                  </div>
-                </div>
-
-                <h4 className="text-lg font-bold text-[#F3F0E8] font-display mb-1 group-hover:text-[#C6FF3D] transition-colors">
-                  {steps[3].title}
-                </h4>
-                <p className="text-xs font-mono text-[#C6FF3D] mb-3">{steps[3].subtitle}</p>
-
-                <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed">
-                  {steps[3].description}
-                </p>
-              </div>
-
-              <div className="pt-4 mt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#F3F0E8]/60 flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#C6FF3D]" />
-                <span>Cross-verified by organizing team</span>
-              </div>
-            </div>
-
-            {/* Step 5 */}
-            <div className="p-6 sm:p-7 rounded-2xl bg-[#052928] border border-[#F3F0E8]/15 hover:border-[#C6FF3D]/50 transition-all flex flex-col justify-between group">
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-mono font-bold text-[#073B3A] bg-[#C6FF3D] px-2.5 py-1 rounded-md">
-                    STEP {steps[4].stepNumber}
-                  </span>
-                  <div className="w-10 h-10 rounded-xl bg-[#073B3A] border border-[#C6FF3D]/30 flex items-center justify-center text-[#C6FF3D] group-hover:scale-110 transition-transform">
-                    <MailCheck className="w-5 h-5" />
-                  </div>
-                </div>
-
-                <h4 className="text-lg font-bold text-[#F3F0E8] font-display mb-1 group-hover:text-[#C6FF3D] transition-colors">
-                  {steps[4].title}
-                </h4>
-                <p className="text-xs font-mono text-[#C6FF3D] mb-3">{steps[4].subtitle}</p>
-
-                <p className="text-xs sm:text-sm text-[#F3F0E8]/80 leading-relaxed">
-                  {steps[4].description}
-                </p>
-              </div>
-
-              <div className="pt-4 mt-4 border-t border-[#F3F0E8]/10 text-[11px] font-mono text-[#F3F0E8]/60 flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-[#C6FF3D]" />
-                <span>Sent to registered email addresses</span>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
 
-        {/* Registration Notice Box */}
+        {/* Confirmation & Payment Policy Box */}
         <div className="rounded-3xl bg-[#052928] border-2 border-[#C6FF3D] p-6 sm:p-8 shadow-2xl relative overflow-hidden">
           <div className="flex flex-col sm:flex-row items-start gap-4">
             <div className="w-12 h-12 rounded-2xl bg-[#C6FF3D]/10 border border-[#C6FF3D]/30 flex items-center justify-center text-[#C6FF3D] flex-shrink-0 mt-1">
-              <AlertCircle className="w-6 h-6 text-[#C6FF3D]" />
+              <ShieldCheck className="w-6 h-6 text-[#C6FF3D]" />
             </div>
 
             <div className="space-y-3.5 flex-1 text-sm text-[#F3F0E8]/90 leading-relaxed">
               <div>
                 <span className="text-xs font-mono text-[#C6FF3D] uppercase tracking-wider font-bold block mb-1">
-                  OFFICIAL GUIDELINES
+                  CONFIRMATION &amp; PAYMENT PROTOCOL
                 </span>
                 <h4 className="text-xl sm:text-2xl font-extrabold text-[#F3F0E8] font-display">
-                  Important Registration Notes
+                  Important Confirmation Rules
                 </h4>
               </div>
 
@@ -342,19 +298,19 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
                 <p className="flex items-start gap-2">
                   <span className="text-[#C6FF3D] font-bold mt-0.5">•</span>
                   <span>
-                    <strong>100% Free Registration:</strong> Zero entry fees, zero hidden costs.
+                    <strong>KonfHub Ticket Confirmation:</strong> Participants receive official ticket confirmation from KonfHub only after successful payment of {payment.feeText}.
                   </span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-[#C6FF3D] font-bold mt-0.5">•</span>
                   <span>
-                    <strong>Complete Both Steps:</strong> Register on Unstop first, then fill out the official Google Form so our team can verify your roster.
+                    <strong>Verification Required:</strong> Participation is never marked as confirmed without verified ticket purchase on KonfHub.
                   </span>
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="text-[#C6FF3D] font-bold mt-0.5">•</span>
                   <span>
-                    <strong>Email Confirmation:</strong> Verified teams will receive challenge briefs and Google Meet links via registered email.
+                    <strong>Further-Round Instructions:</strong> Challenge guidelines, Round 1–4 schedules, and Google Meet links are sent via official email to confirmed participants.
                   </span>
                 </p>
               </div>
@@ -366,11 +322,11 @@ export const Registration: React.FC<RegistrationProps> = ({ onOpenTerms }) => {
                   className="text-xs font-mono text-[#C6FF3D] underline underline-offset-4 hover:text-[#b5f524] transition-colors flex items-center gap-1.5"
                 >
                   <Info className="w-3.5 h-3.5" />
-                  <span>Review Complete Terms & Conditions</span>
+                  <span>Review Complete Terms &amp; Conditions</span>
                 </button>
 
                 <div className="text-[11px] font-mono text-[#F3F0E8]/50">
-                  PROTON SOLUTIONS • OFFICIAL HACKATHON PROTOCOL
+                  PROTON SOLUTIONS • UNSTOP + KONFHUB VERIFIED FLOW
                 </div>
               </div>
             </div>

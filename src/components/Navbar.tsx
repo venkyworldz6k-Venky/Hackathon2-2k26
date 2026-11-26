@@ -82,7 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="px-4 py-2 text-xs font-black rounded-xl bg-[#C6FF3D] text-[#073B3A] hover:bg-[#b5f524] transition-all duration-200 shadow-neon flex items-center gap-1.5 cursor-pointer"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#073B3A]" />
-              <span>Register (Free)</span>
+              <span>Register Now</span>
             </button>
           </div>
 
@@ -153,7 +153,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="w-full py-2.5 text-xs font-black rounded-xl bg-[#C6FF3D] text-[#073B3A] flex items-center justify-center gap-2 shadow-neon cursor-pointer"
             >
               <Sparkles className="w-4 h-4" />
-              <span>Register on Unstop (Free)</span>
+              <span>Register & Get Ticket</span>
             </button>
           </div>
         </div>

@@ -38,12 +38,10 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
             <ShieldAlert className="w-5 h-5 text-[#C6FF3D] flex-shrink-0 mt-0.5" />
             <div>
               <strong className="text-[#C6FF3D] font-mono block text-xs tracking-wide uppercase mb-1">
-                OFFICIAL POLICY: 100% FREE PARTICIPATION
+                OFFICIAL POLICY: TWO-STAGE REGISTRATION & PAYMENT
               </strong>
               <span>
-                Participation in {HACKATHON_CONFIG.eventName} is <strong>100% free of charge (₹0 fee)</strong>.
-                No registration fee, subscription, or payment is required at any stage of the event.
-                Please review all event details before completing your registration.
+                Participation in {HACKATHON_CONFIG.eventName} requires initial registration on Unstop followed by purchasing the official <strong>₹350 entry ticket exclusively through KonfHub</strong>. Participation is confirmed only after successful ticket purchase.
               </span>
             </div>
           </div>
@@ -102,7 +100,7 @@ export const TermsSection: React.FC = () => {
             Terms and Conditions
           </h2>
           <p className="text-[#F3F0E8]/80 text-base">
-            Please read these conditions carefully before completing your free event registration.
+            Please read these conditions carefully before completing your Unstop registration and KonfHub ticket purchase.
           </p>
         </div>
 
@@ -110,11 +108,10 @@ export const TermsSection: React.FC = () => {
           <ShieldAlert className="w-7 h-7 text-[#C6FF3D] flex-shrink-0 mt-0.5" />
           <div>
             <h4 className="text-sm font-bold text-[#C6FF3D] font-mono uppercase tracking-wide mb-1">
-              OFFICIAL POLICY: 100% FREE PARTICIPATION
+              OFFICIAL POLICY: TWO-STAGE REGISTRATION & PAYMENT
             </h4>
             <p className="text-xs sm:text-sm text-[#F3F0E8]/90 leading-relaxed">
-              Registration for all eligible students and developers is completely free of charge (₹0 fee).
-              No payment or banking credentials are requested or required. Terms and Conditions Apply.
+              Unstop is used only for initial registration. All participants must complete the official <strong>₹350 entry ticket</strong> purchase exclusively via KonfHub to confirm their participation. Terms and Conditions Apply.
             </p>
           </div>
         </div>
