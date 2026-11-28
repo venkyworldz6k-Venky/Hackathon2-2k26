@@ -341,7 +341,7 @@ export const HACKATHON_CONFIG = {
 
   // Official Channel & Registration Links
   placeholders: {
-    unstopEventUrl: "https://unstop.com/hackathons/ai-codestorm-2026-proton-solutions",
+    unstopEventUrl: "https://unstop.com/hackathons/ai-codestorm-2026-proton-solutions-1826401",
     konfhubTicketUrl: "https://konfhub.com/ai-codestorm-hackathon-2026",
     googleFormUrl: "https://forms.gle/YKmaTnHpTi65envRA",
     whatsappChannelUrl: "https://whatsapp.com/channel/0029VbDpw0m1iUxbAtgMO71Z",
