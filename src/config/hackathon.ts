@@ -100,7 +100,7 @@ export const HACKATHON_CONFIG = {
     tagline: "Official Ticketing & Payment Infrastructure",
     description: "KonfHub is our official Ticket Partner for AI CodeStorm 2026, powering secure entry ticket booking, payment processing, and instant email ticket confirmations.",
     website: "https://konfhub.com",
-    ticketUrl: "https://konfhub.com/ai-codestorm-2026"
+    ticketUrl: "https://konfhub.com/ai-codestorm-hackathon-2026"
   },
 
   ngoPartner: {
@@ -342,7 +342,7 @@ export const HACKATHON_CONFIG = {
   // Official Channel & Registration Links
   placeholders: {
     unstopEventUrl: "https://unstop.com/hackathons/ai-codestorm-2026-proton-solutions",
-    konfhubTicketUrl: "https://konfhub.com/ai-codestorm-2026",
+    konfhubTicketUrl: "https://konfhub.com/ai-codestorm-hackathon-2026",
     googleFormUrl: "https://forms.gle/YKmaTnHpTi65envRA",
     whatsappChannelUrl: "https://whatsapp.com/channel/0029VbDpw0m1iUxbAtgMO71Z",
     discordServerUrl: "#",
