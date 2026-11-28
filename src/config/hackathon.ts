@@ -91,7 +91,7 @@ export const HACKATHON_CONFIG = {
       "Evaluation, judging coordination, and prize distribution"
     ],
     contactEmail: "potrontech-hr@proton.me",
-    website: "https://protonsolutions.tech"
+    website: "https://protonsolutions.vercel.app/"
   },
 
   ticketPartner: {

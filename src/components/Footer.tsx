@@ -149,6 +149,16 @@ export const Footer: React.FC<FooterProps> = ({
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#F3F0E8]/80">
               <li>
                 <a
+                  href={technologyOrganizer.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#C6FF3D] transition-colors flex items-center gap-1.5"
+                >
+                  Proton Solutions (Website)
+                </a>
+              </li>
+              <li>
+                <a
                   href={HACKATHON_CONFIG.placeholders.unstopEventUrl}
                   target="_blank"
                   rel="noopener noreferrer"

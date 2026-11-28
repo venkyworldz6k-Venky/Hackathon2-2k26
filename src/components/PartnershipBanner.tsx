@@ -67,8 +67,16 @@ export const PartnershipBanner: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#F3F0E8]/10 flex items-center justify-between text-xs font-mono text-[#F3F0E8]/60">
-              <span>{technologyOrganizer.contactEmail}</span>
+            <div className="mt-6 pt-4 border-t border-[#F3F0E8]/10 flex items-center justify-between text-xs font-mono">
+              <a 
+                href={technologyOrganizer.website} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#C6FF3D] hover:underline flex items-center gap-1 font-bold"
+              >
+                <span>protonsolutions.vercel.app</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
               <span className="text-[#C6FF3D]">Tech Partner</span>
             </div>
           </div>

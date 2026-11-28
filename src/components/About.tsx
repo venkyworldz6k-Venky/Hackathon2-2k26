@@ -93,7 +93,18 @@ export const About: React.FC = () => {
             </div>
             <div>
               <span className="text-[10px] font-mono uppercase text-[#C6FF3D] font-bold block">ORGANIZER</span>
-              <h4 className="text-base font-bold text-[#F3F0E8]">{technologyOrganizer.name}</h4>
+              <div className="flex items-center gap-2">
+                <h4 className="text-base font-bold text-[#F3F0E8]">{technologyOrganizer.name}</h4>
+                <a
+                  href={technologyOrganizer.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C6FF3D] hover:text-white"
+                  title="Visit Website"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
               <p className="text-xs text-[#F3F0E8]/60">AI Engineering challenge design, platform infrastructure, and evaluation.</p>
             </div>
           </div>
